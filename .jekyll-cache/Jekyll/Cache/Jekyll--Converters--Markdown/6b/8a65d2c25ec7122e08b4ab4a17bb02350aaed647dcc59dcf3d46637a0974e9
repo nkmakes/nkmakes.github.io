@@ -1,4 +1,4 @@
-I"H<h2 id="intro">Intro</h2>
+I"<h2 id="intro">Intro</h2>
 <p>Wanted a small simple robot to test different control modules and after some search, i landed into <a href="https://www.thingiverse.com/thing:2662828">Smars modular robot project</a>.
 This small robot is based around a 9V battery and a arduino uno board, i had laying around some esp32 based arduino uno sized board and a screw shield terminal so it looked like a perfect fit, i had already everything needed excepting some cheap 6V motors.</p>
 
@@ -15,6 +15,10 @@ This small robot is based around a 9V battery and a arduino uno board, i had lay
 <span class="n">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="err">'</span><span class="n">Tom</span><span class="err">'</span><span class="p">)</span>
 <span class="cp">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<h2 id="some-action">Some action</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z3jsNJ_2ksw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uIImwilvI2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <p>##</p>
 
