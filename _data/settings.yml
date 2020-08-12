@@ -10,7 +10,7 @@ author:
   name: Niko
   #image: 01.jpg
   say-hello: Hello, I’m <strong>Niko</strong>
-  bio: Welcome to my binary corner about <strong>robotics</strong>, <strong>melted palstic</strong>, <strong>embedded software</strong>, and <strong>automation</strong>. Throught videos, writes, and fun projects. I like <a href="#">coffe</a> & the <a href="#">sea</a>.
+  bio: Welcome to my binary corner about <strong>robotics</strong>, <strong>melted plastic</strong>, <strong>embedded software</strong>, and <strong>automation</strong>. Throught videos, writes, and fun projects. I like <a href="#">coffe</a> & the <a href="#">sea</a>.
 
 
 #-------------------------------
@@ -24,7 +24,7 @@ instagram: https://instagram.com/spicy_coder # Add your Instagram handle
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: nkamakes # add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: nkmakes # add your shortname for Disqus Comment. For example mr-brown
 
 
 #-------------------------------

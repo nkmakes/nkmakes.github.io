@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "SMARS esp32 wifi robot tank"
+date:   2020-8-10 8:05:55 +0100
+image:  10.jpg
+tags:   esp32 projects
+---
+
+## Intro
+Wanted a small simple robot to test different control modules and after some search, i landed into [Smars modular robot project][smars-link].
+This small robot is based around a 9V battery and a arduino uno board, i had laying around some esp32 based arduino uno sized board and a screw shield terminal so it looked like a perfect fit, i had already everything needed excepting some cheap 6V motors.
+
+## 3d print and build
+The model is very easy to print and build, no supports needed, had some problems when mounting the tracks but with a little bit of oil in the idle wheel everything works really well. In the parts of the original models uses 200rpm motors, mine are 300rpm as the other ones where not available, but its not any problem
+
+## Electronics
+As mentioned i used a esp32 arduino sized board and mounted over it a little homemade shield with a tb6612 driver and external VIN
+
+## Code
+{% highlight c++ %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+## 
+
+[smars-link]: https://www.thingiverse.com/thing:2662828
+
+

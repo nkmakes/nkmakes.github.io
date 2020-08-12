@@ -1,0 +1,21 @@
+I"H<h2 id="intro">Intro</h2>
+<p>Wanted a small simple robot to test different control modules and after some search, i landed into <a href="https://www.thingiverse.com/thing:2662828">Smars modular robot project</a>.
+This small robot is based around a 9V battery and a arduino uno board, i had laying around some esp32 based arduino uno sized board and a screw shield terminal so it looked like a perfect fit, i had already everything needed excepting some cheap 6V motors.</p>
+
+<h2 id="3d-print-and-build">3d print and build</h2>
+<p>The model is very easy to print and build, no supports needed, had some problems when mounting the tracks but with a little bit of oil in the idle wheel everything works really well. In the parts of the original models uses 200rpm motors, mine are 300rpm as the other ones where not available, but its not any problem</p>
+
+<h2 id="electronics">Electronics</h2>
+<p>As mentioned i used a esp32 arduino sized board and mounted over it a little homemade shield with a tb6612 driver and external VIN</p>
+
+<h2 id="code">Code</h2>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">def</span> <span class="n">print_hi</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="n">puts</span> <span class="s">"Hi, #{name}"</span>
+<span class="n">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="err">'</span><span class="n">Tom</span><span class="err">'</span><span class="p">)</span>
+<span class="cp">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>##</p>
+
+:ET
