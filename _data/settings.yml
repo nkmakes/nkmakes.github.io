@@ -1,8 +1,8 @@
 #-------------------------------
 # General Site Settings
-title: nkmakes - DIY | IOT | 3dprint
+title: nkmakes
 logo: logo.svg # You can add own logo.
-description: Niko's projects personal blog
+description: Niko's projects personal blog - DIY | IOT | 3dprint
 
 
 #-------------------------------
@@ -11,7 +11,7 @@ author:
   name: Niko
   image: 01.jpg
   say-hello: Hello, I’m <strong>Niko</strong>
-  bio: Welcome to my binary corner about <strong>robotics</strong>, <strong>melted palstic</strong>, <strong>embedded software</strong>, and <strong>automation</strong>. Throught tutorials, free resources and inspiration. I like <a href="#">coffe</a> & the sea.
+  bio: Welcome to my binary corner about <strong>robotics</strong>, <strong>melted palstic</strong>, <strong>embedded software</strong>, and <strong>automation</strong>. Throught videos, writes, and fun projects. I like <a href="#">coffe</a> & the <a href="#">sea</a>.
 
 
 #-------------------------------
