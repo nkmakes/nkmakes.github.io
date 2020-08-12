@@ -11,6 +11,8 @@ You lived before you met me?! Ow, my spirit! Humans dating robots is sick. __You
 
 ## Are you crazy? I can't swallow that.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wHDVX2E8nLY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain. Meh. So, how 'bout them Knicks? Also Zoidberg.
 
 1. We need rest. The spirit is willing, but the flesh is spongy and bruised.
