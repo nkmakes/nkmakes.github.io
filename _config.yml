@@ -1,4 +1,5 @@
 title: Stackbit Exto Theme
+url: nkmakes.github.io
 baseurl: /
 permalink: '/:title/'
 collections:
