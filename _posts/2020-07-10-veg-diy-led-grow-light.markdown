@@ -30,9 +30,9 @@ And depending on your driver choice:
 - 1x apc or lpc stl
 - 2x wago_apc or wago_lpc stl
 
-![]({{ site.baseurl }}/images/render_apc.jpg)
+![]({{ site.baseurl }}/images/render_apc.PNG)
 
-![]({{ site.baseurl }}/images/render_lpc.jpg)
+![]({{ site.baseurl }}/images/render_lpc.PNG)
 
 ## Components
 
@@ -61,5 +61,6 @@ AC drivers cables should be connected using connector of your coice to the AC ca
 
 ## Other Links
 
-You can find more detailed instruction about how to build this project on [instructables][https://www.instructables.com/id/30-3D-Printed-Efficient-Led-Grow-Light/]
+You can find more detailed instructions on how to build this project on [instructables][instructables-link]
 
+[instructables-link]: https://www.instructables.com/id/30-3D-Printed-Efficient-Led-Grow-Light/
