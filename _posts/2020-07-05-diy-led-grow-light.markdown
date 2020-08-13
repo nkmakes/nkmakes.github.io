@@ -7,6 +7,8 @@ tags:   led grow light 3dprint
 ---
 This is a small 3d printed led light i made for my vegetables houseplant. 
 
+
+
 Designed to be as cheap as possible and let you grow your own food,  but to give the maximum efficiency and don´t involve any soldering. It's perfect to raise not very light demanding plants or for early stages,  i'm sure it also can be used for photography, hydroponics, aquaponics,  any kind of indoor setup and anything else you got in mind! 
 
 Uses bridgelux gen2 or gen3 L0280 led lights, and can use both 500k or 3500k cri80 variantes
