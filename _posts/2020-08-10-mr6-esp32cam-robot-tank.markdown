@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "SMARS esp32 wifi robot tank"
-date:   2020-8-10 8:05:55 +0100
+title:  "MR6 esp32cam robot tank"
+date:   2020-8-9 8:05:55 +0100
 image:  10.jpg
-tags:   SMARS esp32 robot
+tags:   esp32cam robot tank project
 ---
 
 Wanted a small simple robot to test different control modules and after some search, i landed into [Smars modular robot project][smars-link].
