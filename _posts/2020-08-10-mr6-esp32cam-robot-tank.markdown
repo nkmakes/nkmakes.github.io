@@ -2,7 +2,7 @@
 layout: post
 title:  "MR6 esp32cam robot tank"
 date:   2020-8-9 8:05:55 +0100
-image:  10.jpg
+image:  02.jpg
 tags:   esp32cam robot tank project
 ---
 
