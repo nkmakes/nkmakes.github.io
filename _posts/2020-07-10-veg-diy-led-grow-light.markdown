@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  veg diy led grow light
+title:  Diy led grow light
 date:   2020-07-05 15:01:35 +0100
 image:  led_mw20w_front.jpg
 tags:   led grow light 3dprint
