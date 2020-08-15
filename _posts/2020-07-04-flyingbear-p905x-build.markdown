@@ -1,0 +1,90 @@
+---
+layout: post
+title:  Flyingbear P905x build
+date:   2020-07-05 15:01:35 +0100
+image:  led_mw20w_front.jpg
+tags:   3dprinter flyingbear p905x upgrades
+---
+This is the build post about the first 3d printer completely assembled by me. I based this build on the cheapest 3d printer available at the internet at the moment, CTC prusa i3b from ebay which i got at home for 79€, it was a really bad quality wood Anet AM8 copy.
+
+I first built the original printer but it had several flaws that caused a really poor print quality:
+
+- The extruder got jammed all the time and while printing got a lot of oozing.
+- The bed was made from wood so every print the nozzle offset changed.
+- The bearings where really poor quality so the print wasn't very precise.
+- The frame was really fragile and not sturdy at all, tried with some .
+- The controller board was a defective AM8 board with a wrong bootloader so updates ghot really painfull.
+
+So i bought a new frame for it and a new set of components, also i added a Rpi octorpint server with a webcam.
+
+## Components
+
+### 3d Printer
+
+| number | price  | Component                                      |
+| ------ | ------ | ---------------------------------------------- |
+| 1      | 79     | CTC prusa i3b                                  |
+| 1      | 65     | Ratrig AM8 Frame Kit                           |
+| 12     | 5.37   | Linear bearings                                |
+| 1      | 22.80  | Bigtreetech SKR v1.3 mini                      |
+| 1      | 12.41  | Heated bed                                     |
+| 1      | 17.39  | Y cariage + bowden MK8 metal extruder          |
+| 1      | 22     | Trieanglelabs v6 hotend+capricorn tube+nozzles |
+| 1 kg   | 20     | PLA for 3d printed parts                       |
+| 2      | -      | 608zz bearing                                  |
+| 2      | -      | Z rod with anti backlash and flex coupler      |
+|        | 243.97 | Total cost                                     |
+
+### Octoprint server
+
+| number | price | Component                                  |
+| ------ | ----- | ------------------------------------------ |
+| 1      | 6.50  | meanwell LPV-60-12 (used by both printers) |
+| 1      | 20    | Raspberry pi 3 model A+                    |
+| 1      | 8.80  | Rpi 5mp cam                                |
+| 1      | free  | 5050 Led strip                             |
+| 1      | 0.70  | Mosfet module                              |
+| 1      | 5     | Ikea Lack table                            |
+| 1      | 1.50  | 12v to 5v buck converter                   |
+| 2      | 3.50  | 120mm 12V Fans                             |
+| 2      | 0.50  | Wago connectors                            |
+| 1      |       | USB cable                                  |
+|        | 43    | Total cost                                 |
+
+### 3d Printed parts used
+
+| number | price | Component               | Link |
+| ------ | ----- | ----------------------- | ---- |
+| 1      | 79    | meanwell LPC-60-12      |      |
+| 1      | 20    | Raspberry pi 3 model A+ |      |
+| 1      | 8.80  | Rpi 5mp cam             |      |
+| 1      | free  | 5050 Led strip          |      |
+| 1      | 0.70  | Mosfet module           |      |
+|        | 108.5 | Total                   |      |
+|        |       |                         |      |
+|        |       |                         |      |
+|        |       |                         |      |
+
+## Electrical Wiring
+
+The electrical connections are pretty simple, all of the four stripes must go in parallel to have equal current.
+
+For this you will need the 5 way wago connectors, where you connect both ends of DC voltage side of the driver and a cable from every strip.
+
+AC drivers cables should be connected using connector of your coice to the AC cable with its corresponding plug.
+
+![](C:/Users/niko9/OneDrive/2020/spicy_coder/web/nkmakes.github.io/_posts/{{ site.baseurl }}/images/led_mw20w_back.jpg)
+
+## Build Details
+
+### 3d Printer
+
+### Octoprint Server and table
+
+## Photos of finished build
+
+## End 
+
+You can find more detailed instructions on how to build this project on [instructables][instructables-link]
+
+[instructables-link]: https://www.instructables.com/id/30-3D-Printed-Efficient-Led-Grow-Light/
