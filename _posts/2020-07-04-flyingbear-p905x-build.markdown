@@ -2,7 +2,7 @@
 layout: post
 title:  Flyingbear P905x build
 date:   2020-07-05 15:01:35 +0100
-image:  led_mw20w_front.jpg
+image:  p905_main.jpg
 tags:   3dprinter flyingbear p905x upgrades
 ---
 This is the build post about the first 3d printer completely assembled by me. I based this build on the cheapest 3d printer available at the internet at the moment, CTC prusa i3b from ebay which i got at home for 79€, it was a really bad quality wood Anet AM8 copy.

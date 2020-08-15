@@ -2,7 +2,7 @@
 layout: post
 title:  "Escornabot robot guide"
 date:   2020-06-05 8:05:55 +0100
-image:  02.jpg
+image:  escornabot_main.jpg
 tags:   escornabot arduino opensource robot
 ---
 
