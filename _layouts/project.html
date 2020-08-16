@@ -17,13 +17,6 @@ layout: default
             <a href="{{ site.baseurl }}/about/" class="author-name">{{site.data.settings.author.name}}</a>
           </div>
 
-          {% if page.tags.size >= 1 %}
-          <div class="post__tags">
-            {% for tag in page.tags %}
-              <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tags-tag">{{ tag }}</a>
-            {% endfor %}
-          </div>
-          {% endif %}
         </div>
       </div>
     </div>
@@ -53,38 +46,48 @@ layout: default
 
       <div class="post__share">
         <span class="share__title">You can find more about this project on:</span>
+        <br>
         <ul class="share__list list-reset">
+          {% if page.instructable %}
           <li class="share__item">
-            <a class="share__facebook" href="{{page.instructables}}"
-              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-              title="Instructables" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>
+            <a class="share__facebook" href="{{page.instructables}}">
+            <i class="ion ion-logo-facebook"></i></a>
           </li>
+          {% endif %}
 
+          {% if page.hackaday %}
           <li class="share__item">
             <a class="share__twitter" href="{{page.hackaday}}"
               onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
               title="Project on Hackaday" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>
           </li>
+          {% endif %}
 
+          {% if page.github %}
           <li class="share__item">
             <a class="share__linkedin" href="{{page.github}}"
               onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" 
               title="Github repo" rel="nofollow"><i class="ion ion-logo-linkedin"></i></a>
           </li>
+          {% endif %}
 
+          {% if page.thingiverse %}
           <li class="share__item">
             <a class="share__pinterest" href="{{page.thingiverse}}"
               onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" 
               title="Thingiverse Files"
               rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>
           </li>
+          {% endif %}
 
+          {% if page.myminifactory %}
           <li class="share__item">
             <a class="share__pinterest" href="{{page.myminifactory}}"
               onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" 
               title="Myminifactory Files"
               rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>
           </li>
+          {% endif %}
         </ul>
       </div>
 
@@ -92,6 +95,7 @@ layout: default
 
 
       <div class="post__share">
+        <br>
         <span class="share__title">Share this article:</span>
         <ul class="share__list list-reset">
           <li class="share__item">
