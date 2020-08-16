@@ -13,16 +13,6 @@
         {% endif %}
 
         <div class="article__content {{ without-image }}">
-          <div class="article-tags">
-          {% if project.tags.size >= 1 %}
-            <div class="article-tags__box">
-              {% for tag in project.tags %}
-                <a href="{{ site.baseurl }}/tag/{{ tag }}" class="article__tag">{{ tag }}</a>
-              {% endfor %}
-            </div>
-          {% else %}
-          {% endif %}
-          </div>
       
           <h2 class="article__title">
             <a href="{{ project.url | prepend: site.baseurl }}">{{project.title}}</a>
@@ -35,7 +25,7 @@
               <span class="article__date"><time datetime="{{ project.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ project.date | date: date_format }}</time></span>
             </div>
 
-            <a href="{{project.url | prepend: site.baseurl}}" class="read-more">Keep Reading <i class="ion ion-ios-arrow-forward"></i></a>
+            <a href="{{project.url | prepend: site.baseurl}}" class="read-more">More Info <i class="ion ion-ios-arrow-forward"></i></a>
           </div>
 
         </div>
