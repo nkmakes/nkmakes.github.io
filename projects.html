@@ -17,10 +17,10 @@ title: projects
 <div class="container">
 	<div class="row">
 	{% if site.projects.size > 0 %}
-		{% for project in paginator.projects %}
+		{% for project in site.projects %}
 			{% include project-content.html %}
 		{% endfor %}
 	{% endif %}
 	</div>
 </div>
-{% include pagination.html %}
+
