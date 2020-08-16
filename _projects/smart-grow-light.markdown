@@ -2,6 +2,12 @@
 layout: project
 title:  Homeassistant enabled smart grow light
 image:  06.jpg
+tags:   led grow light 3dprint
+github: https://www.google.com
+instructables: https://www.google.com
+hackaday: https://www.google.com
+thingiverse: https://www.google.com
+myminifactory: https://www.google.com
 ---
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 
