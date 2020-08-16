@@ -24,6 +24,12 @@ defaults:
 include:
   - _pages
 
+# Colections
+collections:
+  projects:
+    output: true
+
+
 
 # Tags
 tag_page_dir:         tag
