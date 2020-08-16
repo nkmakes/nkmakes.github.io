@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  Diy led grow light
-date:   2020-07-05 15:01:35 +0100
 image:  led_mw20w_front.jpg
 tags:   led grow light 3dprint
+github: 
 ---
 This is a small 3d printed led light i made for my vegetables houseplant. 
 

@@ -17,8 +17,8 @@ title: projects
 <div class="container">
 	<div class="row">
 	{% if site.projects.size > 0 %}
-		{% for post in paginator.projects %}
-			{% include article-content.html %}
+		{% for project in paginator.projects %}
+			{% include project-content.html %}
 		{% endfor %}
 	{% endif %}
 	</div>
