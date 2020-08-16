@@ -1,9 +1,7 @@
 ---
-layout: post
+layout: project
 title:  Homeassistant enabled smart grow light
-date:   2020-8-10 15:01:35 +0100
 image:  06.jpg
-tags:   homeassistant esp32 led plants hass.io
 ---
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 
