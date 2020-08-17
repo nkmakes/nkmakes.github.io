@@ -88,9 +88,9 @@ To solder the PCB can be a little bit tricky, so i made the following video as a
 
 
 
-## Homeassistant ESPHome config
+## Homeassistant ESPHome configuration
 
-
+The following sketch contains the directives for ESPHome:
 
 <script src="https://gist.github.com/nkmakes/5cbb01c7a6e85998619a468e60582e12.js"></script>
 
