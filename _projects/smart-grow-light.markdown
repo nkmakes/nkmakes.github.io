@@ -42,16 +42,35 @@ So i decided to create a tabletop planter which could give enough light to my pl
 
 ## 3D Design and printed parts
 
+### 3D design animation overview
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3oLMcAhXuZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 3d printed components
+
+| number | price | Component                           | Link |
+| ------ | ----- | ----------------------------------- | ---- |
+| 2      |       | BXEB L0280                          |      |
+| 30     |       | M3 25mm aprox screws and nuts       |      |
+| 2      |       | M2 / M2.5 25mm screws ands nuts     |      |
+| 1      |       | Meanwell LDD-700L                   |      |
+| 1      |       | 24V - 2A Constant voltage driver    |      |
+| 1      |       | ESP32cam with 140º camera           |      |
+| 1      |       | Wifi antenna                        |      |
+| 1      |       | OLED screen                         |      |
+| 1      |       | DHT22                               |      |
+| 1      |       | MP1584                              |      |
+| 2      |       | 18-24 AWG cable (RED/BLACK)         |      |
+| 1      |       | IKEA TILLGANG                       |      |
 
 ## Electrical connections and PCB solder
 
+To solder the PCB can be a little bit tricky, so i made the following video as a guide:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TXhWJUsacrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Homeassistant integration with ESPHome
-- First we need to install ESPHome and MQTT
-- Then we need to use provided sketch
+## Homeassistant ESPHome config
+
 <script src="https://gist.github.com/nkmakes/5cbb01c7a6e85998619a468e60582e12.js"></script>
-
 
 ## NodeRed Automation
