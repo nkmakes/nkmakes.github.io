@@ -2,7 +2,7 @@
 layout: project
 title:  Grow Assistant
 subtitle: A homeassistant integrated smart grow light
-image:  06.jpg
+image:  /images/06.jpg
 tags:   led grow light 3dprint nodered esphome homeassistant
 hackaday: https://hackaday.io/project/171004-esp32-cam-smart-led-herbs-planter
 ---
