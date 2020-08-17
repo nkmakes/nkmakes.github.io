@@ -49,6 +49,9 @@ So i decided to create a tabletop planter which could give enough light to my pl
 
 
 ## Homeassistant integration with ESPHome
+- First we need to install ESPHome and MQTT
+- Then we need to use provided sketch
+<script src="https://gist.github.com/nkmakes/5cbb01c7a6e85998619a468e60582e12.js"></script>
 
 
 ## NodeRed Automation
