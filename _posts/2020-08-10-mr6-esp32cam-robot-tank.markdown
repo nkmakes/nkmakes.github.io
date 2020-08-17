@@ -6,16 +6,23 @@ image:  02.jpg
 tags:   esp32cam robot tank project
 ---
 
-Wanted a small simple robot to test different control modules and after some search, i landed into [Smars modular robot project][smars-link].
-This small robot is based around a 9V battery and a arduino uno board, i had laying around some esp32 based arduino uno sized board and a screw shield terminal so it looked like a perfect fit, i had already everything needed excepting some cheap 6V motors.
+With the aim of creating a cheap 3d printed tank, i found timmiclark's awesome [MR6 tank model][mr6-link] and decided to make mine using his design, and create all the electronics and program based on the cheapest wifi and camera capable based module, the Ai-thinker esp32cam, and tb6612fng driver.
+
+
+
+The idea is to have a battery powered tank with enought WiFi range that could hot a async https web server with a joystick and the webcam image streaming.
 
 ## 3d print and build
-The model is very easy to print and build, no supports needed, had some problems when mounting the tracks but with a little bit of oil in the idle wheel everything works really well. In the parts of the original models uses 200rpm motors, mine are 300rpm as the other ones where not available, but its not any problem
+I got several problems during the print of the model, being my 3dprinters not enough accurate causing the mechanics components couldn't be assebled, so i modified some of the pieces to have a bigger hole etc on tinkercad
 
 ## Electronics
-As mentioned i used a esp32 arduino sized board and mounted over it a little homemade shield with a tb6612 driver and external VIN
+The electronics is based on a custom PCB blank board with a custom circuit implemented around the esp32cam and the driver. Offers external 12V VIN input and motor output screw terminals.
+
+The motor driver uses all of the available pins result of not using the microsd module already incorporated on the module. 
 
 ## Code
+
+The module firmware is very similar to SMARS robot one but adding the camera stream capabilities.
 
 
 <script src="https://gist.github.com/nkmakes/d50d0627f8821a73645102e1be1dcb17.js"></script>
@@ -27,6 +34,6 @@ As mentioned i used a esp32 arduino sized board and mounted over it a little hom
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uIImwilvI2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-[smars-link]: https://www.thingiverse.com/thing:2662828
+[m66-link]: https://www.thingiverse.com/thing:2753227
 
 
