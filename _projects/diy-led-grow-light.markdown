@@ -3,11 +3,10 @@ layout: project
 title:  Diy led grow light
 image:  led_mw20w_front.jpg
 tags:   led grow light 3dprint
-github: https://www.google.com
 instructables: https://www.instructables.com/id/30-3D-Printed-Efficient-Led-Grow-Light/
-hackaday: https://www.google.com
-thingiverse: https://www.google.com
-myminifactory: https://www.google.com
+hackaday: https://hackaday.io/project/170979-high-efficiency-and-cheap-led-grow-light
+thingiverse: https://www.thingiverse.com/thing:4094951
+myminifactory: https://www.myminifactory.com/es/object/3d-print-30-very-efficient-led-grow-light-117785
 ---
 This is a small 3d printed led light i made for my vegetables houseplant. 
 
