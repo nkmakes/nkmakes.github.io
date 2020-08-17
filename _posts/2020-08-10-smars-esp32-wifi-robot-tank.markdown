@@ -2,9 +2,9 @@
 layout: post
 title:  "SMARS esp32 wifi robot tank"
 date:   2020-8-10 8:05:55 +0100
-image:  10.jpg
+image:  /images/10.jpg
 tags:   SMARS esp32 robot
-description: SMARS tank robot simple implementation with esp32 and wifi hotspot controll
+description: SMARS tank robot simple implementation with esp32, tb6612 and wifi async server hotspot control
 ---
 
 Wanted a small simple robot to test different control modules and after some search, i landed into [Smars modular robot project][smars-link].
