@@ -19,7 +19,9 @@ So i decided to create a tabletop planter which could give enough light to my pl
 - Different light spectrum available.
 - Adjustable Height.
 - OLED realtime status show.
-- Easily hackable (I2C Pins exposed). 
+- Easily hackable (I2C Pins exposed).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/djoQBKrrGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Components
