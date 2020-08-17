@@ -17,6 +17,10 @@
           <h2 class="article__title">
             <a href="{{ project.url | prepend: site.baseurl }}">{{project.title}}</a>
           </h2>
+
+          <h4>
+            {{project.subtitle}}
+          </h4>
       
           <p class="article__excerpt">{% if project.description %}{{ project.description }}{% else %}{{ project.content | strip_html | truncate: 185 }}{% endif %}</p>
 
