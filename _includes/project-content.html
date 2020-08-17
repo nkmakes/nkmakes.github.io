@@ -22,7 +22,7 @@
             {{project.subtitle}}
           </h5>
       
-          <p class="article__excerpt">{% if project.description %}{{ project.description }}{% else %}{{ project.content | strip_html | truncate: 185 }}{% endif %}</p>
+          <p class="article__excerpt">{{ project.content | strip_html | truncate: 185 }}</p>
 
             <a href="{{project.url | prepend: site.baseurl}}" class="read-more">More Info <i class="ion ion-ios-arrow-forward"></i></a>
           </div>
