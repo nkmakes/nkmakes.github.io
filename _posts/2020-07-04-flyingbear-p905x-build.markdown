@@ -1,41 +1,33 @@
 ---
 layout: post
-title:  Flyingbear P905x build
+title:  Flyingbear P905x build guide
 date:   2020-07-05 15:01:35 +0100
 image:  p905_main.jpg
 tags:   3dprinter flyingbear p905x upgrades
 ---
-This is the build post about the first 3d printer completely assembled by me. I based this build on the cheapest 3d printer available at the internet at the moment, CTC prusa i3b from ebay which i got at home for 79€, it was a really bad quality wood Anet AM8 copy.
+This post is about the first 3d printer i got, the flyingbear P905X from aliexpress. At the time i have designed and tried some of different upgrades so i will list a how-to for anybody willing to repair or upgrade this printer.
 
-I first built the original printer but it had several flaws that caused a really poor print quality:
+## Print problems found
 
-- The extruder got jammed all the time and while printing got a lot of oozing.
-- The bed was made from wood so every print the nozzle offset changed.
-- The bearings where really poor quality so the print wasn't very precise.
-- The frame was really fragile and not sturdy at all, tried with some .
-- The controller board was a defective AM8 board with a wrong bootloader so updates ghot really painfull.
 
-So i bought a new frame for it and a new set of components, also i added a Rpi octorpint server with a webcam.
 
-## Components
+## Upgrades list
 
-### 3d Printer
+| Upgrade                   | price | pros and cons                                  |
+| ------------------------- | ----- | ---------------------------------------------- |
+| trianglelabs v6 hotend    | 79    | CTC prusa i3b                                  |
+| Z axis anti-backlash nuts | 65    | Ratrig AM8 Frame Kit                           |
+| Capricorn tube            | 5.37  | Linear bearings                                |
+| Bottom electronics mount  | 22.80 | Bigtreetech SKR v1.3 mini                      |
+| Octoprint                 | 12.41 | Heated bed                                     |
+| LED Strip                 | 17.39 | Y cariage + bowden MK8 metal extruder          |
+| Longer Z axis bearings    | 22    | Trieanglelabs v6 hotend+capricorn tube+nozzles |
+|                           |       |                                                |
+|                           |       |                                                |
+|                           |       |                                                |
+|                           |       |                                                |
 
-| number | price  | Component                                      |
-| ------ | ------ | ---------------------------------------------- |
-| 1      | 79     | CTC prusa i3b                                  |
-| 1      | 65     | Ratrig AM8 Frame Kit                           |
-| 12     | 5.37   | Linear bearings                                |
-| 1      | 22.80  | Bigtreetech SKR v1.3 mini                      |
-| 1      | 12.41  | Heated bed                                     |
-| 1      | 17.39  | Y cariage + bowden MK8 metal extruder          |
-| 1      | 22     | Trieanglelabs v6 hotend+capricorn tube+nozzles |
-| 1 kg   | 20     | PLA for 3d printed parts                       |
-| 2      | -      | 608zz bearing                                  |
-| 2      | -      | Z rod with anti backlash and flex coupler      |
-|        | 243.97 | Total cost                                     |
-
-### Octoprint server
+### Aditional tools list
 
 | number | price | Component                                  |
 | ------ | ----- | ------------------------------------------ |
@@ -51,19 +43,7 @@ So i bought a new frame for it and a new set of components, also i added a Rpi o
 | 1      |       | USB cable                                  |
 |        | 43    | Total cost                                 |
 
-### 3d Printed parts used
 
-| number | price | Component               | Link |
-| ------ | ----- | ----------------------- | ---- |
-| 1      | 79    | meanwell LPC-60-12      |      |
-| 1      | 20    | Raspberry pi 3 model A+ |      |
-| 1      | 8.80  | Rpi 5mp cam             |      |
-| 1      | free  | 5050 Led strip          |      |
-| 1      | 0.70  | Mosfet module           |      |
-|        | 108.5 | Total                   |      |
-|        |       |                         |      |
-|        |       |                         |      |
-|        |       |                         |      |
 
 ## Electrical Wiring
 
