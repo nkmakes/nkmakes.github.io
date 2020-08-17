@@ -4,6 +4,7 @@ title:  Diy led grow light
 subtitle: 3d printed Bridgelux L0280 based cheap light
 image:  /images/led_mw20w_front.jpg
 tags:   led grow light 3dprint
+description: Bridgelux L0280 based 3d printed light fixture, under 30$ in materials and 180 lm/w efficiency.
 instructables: https://www.instructables.com/id/30-3D-Printed-Efficient-Led-Grow-Light/
 hackaday: https://hackaday.io/project/170979-high-efficiency-and-cheap-led-grow-light
 thingiverse: https://www.thingiverse.com/thing:4094951
