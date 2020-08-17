@@ -1,8 +1,6 @@
 <div class="contact">
   <ul class="contact__list list-reset">
-    {% if site.data.settings.github %}
-      <li><a href="{{ site.data.settings.github }}"><i class="ion ion-logo-github"></i></a></li>
-    {% else %} {% endif %}
+
 
     {% if site.data.settings.twitter %}
       <li><a href="{{ site.data.settings.twitter }}"><i class="ion ion-logo-twitter"></i></a></li>
@@ -28,14 +26,9 @@
     <li><a href="{{ site.data.settings.youtube }}"><i class="ion ion-logo-youtube"></i></a></li>
     {% else %} {% endif %}
 
-    {% if site.data.settings.thingiverse %}
-    <li><a href="{{ site.data.settings.thingiverse }}"><i class="ion ion-logo-pinterest"></i></a></li>
+    {% if site.data.settings.github %}
+      <li><a href="{{ site.data.settings.github }}"><i class="ion ion-logo-github"></i></a></li>
     {% else %} {% endif %}
-
-    {% if site.data.settings.myminifactory %}
-    <li><a href="{{ site.data.settings.myminifactory }}"><i class="ion ion-logo-pinterest"></i></a></li>
-    {% else %} {% endif %}
-
 
   </ul>
 </div>
