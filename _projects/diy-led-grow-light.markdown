@@ -4,7 +4,7 @@ title:  Diy led grow light
 image:  led_mw20w_front.jpg
 tags:   led grow light 3dprint
 github: https://www.google.com
-instructables: https://www.google.com
+instructables: https://www.instructables.com/id/30-3D-Printed-Efficient-Led-Grow-Light/
 hackaday: https://www.google.com
 thingiverse: https://www.google.com
 myminifactory: https://www.google.com
@@ -64,9 +64,3 @@ For this you will need the 5 way wago connectors, where you connect both ends of
 AC drivers cables should be connected using connector of your coice to the AC cable with its corresponding plug.
 
 ![]({{ site.baseurl }}/images/led_mw20w_back.jpg)
-
-## Other Links
-
-You can find more detailed instructions on how to build this project on [instructables][instructables-link]
-
-[instructables-link]: https://www.instructables.com/id/30-3D-Printed-Efficient-Led-Grow-Light/
