@@ -9,9 +9,9 @@ One day i was tired of buying fresh herbs, but unluckily i live in a apartment, 
 Also i am a lazy guy and i wanted some kind of supervisor of the plant health and status, to track the plants, and automatize as much as possible, while its easy to setup
 So i decided to create a tabletop planter which could give enough light to my plants, and also upload some stats and and images to a server.
 
-Main features of first version:
-- Smart home integrated (Homeassistant).
-- custom PCB with only thru hole components (easy solder).
+## Main features of first version:
+- Smart home integrated (Homeassistant), automation throught nodeRED.
+- Custom PCB with only thru hole components (easy solder).
 - Based on ESP32cam so plenty of implementation examples available.
 - Fully 3d printed frame.
 - High efficiency and dimmable LED Driver.
@@ -37,6 +37,7 @@ Main features of first version:
 | 1      |       | DHT22                               |      |
 | 1      |       | MP1584                              |      |
 | 2      |       | 18-24 AWG cable (RED/BLACK)         |      |
+| 1      |       | IKEA TILLGANG                       |      |
 
 
 ## 3D Design and printed parts
