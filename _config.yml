@@ -1,7 +1,6 @@
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://nkmakes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-title: nkmakes
-tagline: Niko's projects personal blog - DIY - IOT - 3dprint
+title: nkmakes | Niko's projects personal blog - DIY - IOT - 3dprint
 logo: logo.svg # You can add own logo.
 description: Niko's projects personal blog - DIY | IOT | 3dprint
 
