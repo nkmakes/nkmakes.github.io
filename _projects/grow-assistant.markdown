@@ -1,8 +1,9 @@
 ---
 layout: project
-title:  Homeassistant enabled smart grow light
+title:  Grow Assistant
+subtitle: A homeassistant integrated smart grow light
 image:  06.jpg
-tags:   led grow light 3dprint
+tags:   led grow light 3dprint nodered esphome homeassistant
 hackaday: https://hackaday.io/project/171004-esp32-cam-smart-led-herbs-planter
 ---
 One day i was tired of buying fresh herbs, but unluckily i live in a apartment, where there is not direct sunlight most of the year.
@@ -12,7 +13,7 @@ So i decided to create a tabletop planter which could give enough light to my pl
 ## Main features of first version:
 - Smart home integrated (Homeassistant), automation throught nodeRED.
 - Custom PCB with only thru hole components (easy solder).
-- Based on ESP32cam so plenty of implementation examples available.
+- Based on ESP32cam so plenty of projects documentation available.
 - Fully 3d printed frame.
 - High efficiency and dimmable LED Driver.
 - 180 lm/W Led strips.
