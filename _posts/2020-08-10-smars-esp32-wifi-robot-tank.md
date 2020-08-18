@@ -26,6 +26,9 @@ Notice that all of the tb6612 are soldered to male pin headers to be able to con
 
 ## Code
 
+To make the logic part of the project, i used the Arduino framework for esp32 and some external libraries.
+The board creates a WiFi hotspot, and a async server. In the html server, a joystick is displayed. The web browser calculates the movement depending on joystick coordinates and sends the data to a async server on the esp module. This server sends the speed settings to both motors drived by a tb6612fng driver board. You can find full project girhub link at the end of this page.
+
 
 <script src="https://gist.github.com/nkmakes/d50d0627f8821a73645102e1be1dcb17.js"></script>
 
