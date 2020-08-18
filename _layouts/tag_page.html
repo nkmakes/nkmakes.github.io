@@ -9,6 +9,10 @@ layout: default
 </div>
 
 
-{% for post in page.posts %}
-  {% include article-content.html %}
+{% for post in site.posts %}
+  {% if post.tags contains page.tag %}
+    {% include article-content.html %}
+  {% endif %}
 {% endfor %}
+        
+
