@@ -10,5 +10,11 @@ layout: default
 
 
 {% for post in site.posts %}
-  {% include article-content.html %}
+  {% if post.tags != nil}
+    {% for tag in post.tags %}
+      {% if tag == page.tag %}
+        {% include article-content.html %}
+      {% endif %}
+    {% enfor %}
+  {% endif %}
 {% endfor %}
