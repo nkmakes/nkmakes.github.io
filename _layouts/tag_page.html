@@ -10,5 +10,6 @@ layout: default
 
 
 {% for post in page.posts %}
+<h1 class="archive-title">Tag: <span>{{ page.tag }}</span></h1>
   {% include article-content.html %}
 {% endfor %}
