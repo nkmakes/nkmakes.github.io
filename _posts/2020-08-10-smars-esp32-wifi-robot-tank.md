@@ -22,7 +22,7 @@ Notice that all of the tb6612 are soldered to male pin headers to be able to con
 
 ![]({{site.baseurl}}/images/smars_hat1.jpg)
 
-![]({{site.baseurl}}/images/smars_hat1.jpg)
+![]({{site.baseurl}}/images/smars_hat2.jpg)
 
 ## Code
 
