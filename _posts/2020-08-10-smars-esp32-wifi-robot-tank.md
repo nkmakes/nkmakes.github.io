@@ -14,7 +14,15 @@ This small robot is based around a 9V battery and a arduino uno board, i had lay
 The model is very easy to print and build, no supports needed, had some problems when mounting the tracks but with a little bit of oil in the idle wheel everything works really well. In the parts of the original models uses 200rpm motors, mine are 300rpm as the other ones where not available, but its not any problem
 
 ## Electronics
-As mentioned i used a esp32 arduino sized board and mounted over it a little homemade shield with a tb6612 driver and external VIN
+As mentioned i used a esp32 arduino sized board and mounted over it a little homemade shield with a tb6612 driver and external VIN with the following schematic scheme.
+
+![]({{site.baseurl}}/images/smars_electronics.JPG)
+
+Notice that all of the tb6612 are soldered to male pin headers to be able to configure the pins at will.
+
+![]({{site.baseurl}}/images/smars_hat1.jpg)
+
+![]({{site.baseurl}}/images/smars_hat1.jpg)
 
 ## Code
 
