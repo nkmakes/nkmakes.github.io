@@ -1,4 +1,3 @@
----
 layout: project
 title:  Grow Assistant
 subtitle: A homeassistant integrated smart grow light
@@ -7,7 +6,7 @@ tags:   led grow light 3dprint nodered esphome homeassistant
 description: A Hass.io (homeassistant) enabled 3d printed grow light. Based on esp32 cam with a custom made PCB.
 hackaday: https://hackaday.io/project/171004-esp32-cam-smart-led-herbs-planter
 thingiverse: https://www.thingiverse.com/thing:4574145
----
+
 One day i was tired of buying fresh herbs, but unluckily i live in a apartment, where there is not direct sunlight most of the year.
 Also i am a lazy guy and i wanted some kind of supervisor of the plant health and status, to track the plants, and automatize as much as possible, while its easy to setup
 So i decided to create a tabletop planter which could give enough light to my plants, and also upload some stats and and images to a homeassistant server.
@@ -67,22 +66,28 @@ So i decided to create a tabletop planter which could give enough light to my pl
 
 | number | Component                        |
 | ------ | -------------------------------- |
-| 1      | BXEB L0280                       |
-| 30     | M3 25mm aprox screws and nuts    |
-| 2      | M2 / M2.5 25mm screws ands nuts  |
-| 1      | Meanwell LDD-700L                |
-| 1      | 24V - 2A Constant voltage driver |
-| 1      | ESP32cam with 140º camera        |
-| 1      | Wifi antenna                     |
-| 1      | OLED screen                      |
-| 1      | DHT22                            |
-| 1      | MP1584                           |
-| 2      | 18-24 AWG cable (RED/BLACK)      |
-| 1      | IKEA TILLGANG                    |
+| 1      | grass_top_lamp_part.stl (Yellow) |
+| 2      | grass_reflector_body.stl (White) |
+| 1      | grass_bottom_base.stl (Red)      |
+| 2      | grass_bottom_stick.stl (Green)   |
 
 
 
 ## Electrical connections and PCB solder
+
+Grass has its own small PCB board that puts together all the electronic components. Here you can check out the schematics and layout
+
+![grass_pcb_schematic]({{ site.baseurl }}/images/schema.JPG)
+
+![pcb]({{ site.baseurl }}/images/grass_pcb.JPG)
+
+![pcb_render]({{ site.baseurl }}/images/pcb_render.JPG)
+
+Some board render images:
+
+![esp32_cam_2020-Apr-07_11-49-43AM-000_CustomizedView3758424710]({{ site.baseurl }}/images/esp32_cam_2020-Apr-07_11-49-43AM-000_CustomizedView3758424710.png)
+
+![esp32_cam_2020-Apr-07_11-36-41AM-000_CustomizedView25932347027]({{ site.baseurl }}/images/esp32_cam_2020-Apr-07_11-36-41AM-000_CustomizedView25932347027.png)
 
 To solder the PCB can be a little bit tricky, so i made the following video as a guide:
 
