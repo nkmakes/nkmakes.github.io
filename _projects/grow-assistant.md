@@ -99,7 +99,18 @@ So i decided to create a tabletop planter which could give enough light to my pl
 | 1      | grass_bottom_base.stl (Red)      |
 | 2      | grass_bottom_stick.stl (Green)   |
 
+---
 
+### 3d print and Assembly guide
+
+1. You need a pretty precise and big printer to make the design, reflector body is nearly 30cm long, and to make it work properly, the bottom base and the stick need to be a clean juntion to be able to move.
+2. You need to place brass inserts in all holes of reflector and sticks parts, and in the top lamp part where the pcb is going to be mounted.
+3. Glue the bottom base part to the IKEA TILLGANG part, center it properly using the plastic pots.
+4. Place the bxeb-l0280 led bars inside of the reflector bodies.
+5. Place the pcb in its place with all pieces allready mounted, and screw it.
+6. Screw reflector bodies to main top lamp part
+7. Screw the sticks to the top part, place it in place over the bottom base, tighten it.
+8. Place outside board components in place and make electrical connections.
 
 
 
