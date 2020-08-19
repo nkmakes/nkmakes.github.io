@@ -39,6 +39,7 @@ So i decided to create a tabletop planter which could give enough light to my pl
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/djoQBKrrGDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+---
 
 ## Components
 
@@ -58,6 +59,8 @@ So i decided to create a tabletop planter which could give enough light to my pl
 | 1      | IKEA TILLGANG                    |
 | 6      | 11x11x11 1L plastic pots         |
 
+---
+
 ### BOM
 
 | Part           | Device                  | Package                | Description                                                  |
@@ -74,13 +77,15 @@ So i decided to create a tabletop planter which could give enough light to my pl
 | LDD-700L       | LDD-700L                | LDD-XXXL               | LED Power Supplies 9-36Vin 2-32Vout 300mA LED Driver         |
 | MP1584-24VTO5V | DC-DC-STEP-DOWN-MP1584  | DC-DC-STEP-DOWN-MP1584 | DC/DC Step-Down Regulator based on MP1584 chip               |
 
-
+---
 
 ## 3D Design and printed parts
 
 ### 3D design animation overview
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3oLMcAhXuZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 ### 3d printed components
 
@@ -97,7 +102,7 @@ So i decided to create a tabletop planter which could give enough light to my pl
 
 
 
-
+---
 
 ## Electrical connections and PCB solder
 
@@ -120,6 +125,8 @@ To solder the PCB can be a little bit tricky, so i made the following video as a
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TXhWJUsacrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+
+---
 
 ## Homeassistant ESPHome configuration
 
