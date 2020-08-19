@@ -54,6 +54,7 @@ So i decided to create a tabletop planter which could give enough light to my pl
 | 1      | MP1584                           |
 | 2      | 18-24 AWG cable (RED/BLACK)      |
 | 1      | IKEA TILLGANG                    |
+| 6      | 11x11x11 1L plastic pots         |
 
 
 ## 3D Design and printed parts
@@ -64,6 +65,8 @@ So i decided to create a tabletop planter which could give enough light to my pl
 
 ### 3d printed components
 
+![grass esp32cam lamp full render]({{ site.baseurl }}/images/esp32cam_lamp_full_render.png)
+
 | number | Component                        |
 | ------ | -------------------------------- |
 | 1      | grass_top_lamp_part.stl (Yellow) |
@@ -73,21 +76,25 @@ So i decided to create a tabletop planter which could give enough light to my pl
 
 
 
+
+
+
+
 ## Electrical connections and PCB solder
 
 Grass has its own small PCB board that puts together all the electronic components. Here you can check out the schematics and layout
 
-![grass_pcb_schematic]({{ site.baseurl }}/images/schema.JPG)
+![grass pcb schematic]({{ site.baseurl }}/images/schema.JPG)
 
-![pcb]({{ site.baseurl }}/images/grass_pcb.JPG)
+![grass pcb]({{ site.baseurl }}/images/grass_pcb.JPG)
 
-![pcb_render]({{ site.baseurl }}/images/pcb_render.JPG)
+![grass pcb render]({{ site.baseurl }}/images/pcb_render.JPG)
 
 Some board render images:
 
-![esp32_cam_2020-Apr-07_11-49-43AM-000_CustomizedView3758424710]({{ site.baseurl }}/images/esp32_cam_2020-Apr-07_11-49-43AM-000_CustomizedView3758424710.png)
+![grass esp32 pcb board mounted render]({{ site.baseurl }}/images/esp32_cam_2020-Apr-07_11-49-43AM-000_CustomizedView3758424710.png)
 
-![esp32_cam_2020-Apr-07_11-36-41AM-000_CustomizedView25932347027]({{ site.baseurl }}/images/esp32_cam_2020-Apr-07_11-36-41AM-000_CustomizedView25932347027.png)
+![grass esp32 pcb board mounted render detail]({{ site.baseurl }}/images/esp32_cam_2020-Apr-07_11-36-41AM-000_CustomizedView25932347027.png)
 
 To solder the PCB can be a little bit tricky, so i made the following video as a guide:
 
@@ -97,6 +104,8 @@ To solder the PCB can be a little bit tricky, so i made the following video as a
 
 ## Homeassistant ESPHome configuration
 
+To control the light you need to add the ESPHome extension on the RPi and install a firmware on the esp32.
+
 The following sketch contains the directives for ESPHome:
 
 <script src="https://gist.github.com/nkmakes/5cbb01c7a6e85998619a468e60582e12.js"></script>
@@ -105,6 +114,6 @@ The following sketch contains the directives for ESPHome:
 
 ## NodeRed Automation
 
+I used a nodered core server on the raspberry pi to control the the esp32cam, with esphome is pretty forward, in my case i am using the Sun component to turn on lights at sunrise and turn them down at dawn, but any time of automation is posssible.
 
-
-![]({{ site.baseurl }}/images/node_Red.JPG)
+![grass nodered sketch]({{ site.baseurl }}/images/node_Red.JPG)
