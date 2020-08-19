@@ -109,7 +109,7 @@ So i decided to create a tabletop planter which could give enough light to my pl
 
 Grass has its own small PCB board that puts together all the electronic components. Here you can check out the schematics and layout.
 
-There are complete gerber files available on [github]({{site.github}}) and eagle source files can be shared.
+There are complete gerber files available on [github](https://github.com/nkmakes/growassistant) and eagle source files can be shared.
 
 ![grass pcb schematic]({{ site.baseurl }}/images/schema.JPG)
 
