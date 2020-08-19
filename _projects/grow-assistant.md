@@ -58,6 +58,23 @@ So i decided to create a tabletop planter which could give enough light to my pl
 | 1      | IKEA TILLGANG                    |
 | 6      | 11x11x11 1L plastic pots         |
 
+### BOM
+
+| Part           | Device                  | Package                | Description                                                  |
+| -------------- | ----------------------- | ---------------------- | ------------------------------------------------------------ |
+| BOOT           | PINHD-1X2               | 1X02                   | PIN HEADER                                                   |
+| DHT22          | PINHD-1X3               | 1X03                   | PIN HEADER                                                   |
+| ESP32-CAM      | ESP32-CAM               | ESP32CAM               | Modules PCBA Module RoHS                                     |
+| FTDI           | PINHD-1X4               | 1X04                   | PIN HEADER                                                   |
+| I2C_1          | PINHD-1X4               | 1X04                   | PIN HEADER                                                   |
+| I2C_2          | PINHD-1X4               | 1X04                   | PIN HEADER                                                   |
+| J1             | DCJ0303                 | DCJ0303                | DC POWER JACK                                                |
+| J2             | CONN_022.54MM_SCREWTERM | 1X02_2.54_SCREWTERM    | Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections |
+| J3             | CONN_022.54MM_SCREWTERM | 1X02_2.54_SCREWTERM    | Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections |
+| LDD-700L       | LDD-700L                | LDD-XXXL               | LED Power Supplies 9-36Vin 2-32Vout 300mA LED Driver         |
+| MP1584-24VTO5V | DC-DC-STEP-DOWN-MP1584  | DC-DC-STEP-DOWN-MP1584 | DC/DC Step-Down Regulator based on MP1584 chip               |
+
+
 
 ## 3D Design and printed parts
 
