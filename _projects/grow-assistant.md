@@ -1,3 +1,4 @@
+---
 layout: project
 title:  Grow Assistant
 subtitle: A homeassistant integrated smart grow light
@@ -6,6 +7,7 @@ tags:   led grow light 3dprint nodered esphome homeassistant
 description: A Hass.io (homeassistant) enabled 3d printed grow light. Based on esp32 cam with a custom made PCB.
 hackaday: https://hackaday.io/project/171004-esp32-cam-smart-led-herbs-planter
 thingiverse: https://www.thingiverse.com/thing:4574145
+---
 
 One day i was tired of buying fresh herbs, but unluckily i live in a apartment, where there is not direct sunlight most of the year.
 Also i am a lazy guy and i wanted some kind of supervisor of the plant health and status, to track the plants, and automatize as much as possible, while its easy to setup
