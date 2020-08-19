@@ -43,16 +43,16 @@ And depending on your driver choice:
 
 ## Components
 
-| number | price | Component                           |
-| ------ | ----- | ----------------------------------- |
-| 4      |       | BXEB L0280                          |
-| 30     |       | M3 25mm aprox screws and nuts       |
-| 2      |       | M2 / M2.5 25mm screws ands nuts     |
-| 1      |       | Meanwell APC-35-1050 or LPC-60-1400 |
-| 1      |       | 220v/110v AC cable with plug        |
-| 2      |       | 5way WAGO                           |
-| 2      |       | cable connector                     |
-| 2      |       | 18-24 AWG cable (RED/BLACK)         |
+| number | Component                           |
+| ------ | ----------------------------------- |
+| 4      | BXEB L0280                          |
+| 30     | M3 25mm aprox screws and nuts       |
+| 2      | M2 / M2.5 25mm screws ands nuts     |
+| 1      | Meanwell APC-35-1050 or LPC-60-1400 |
+| 1      | 220v/110v AC cable with plug        |
+| 2      | 5way WAGO                           |
+| 2      | cable connector                     |
+| 2      | 18-24 AWG cable (RED/BLACK)         |
 
 
 
