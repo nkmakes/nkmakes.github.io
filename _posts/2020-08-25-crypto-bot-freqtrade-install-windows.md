@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "freqtrader part 1: Running your open source crypto bot on Windows 10"
+title:  "Freqtrader part 1: Running your open source crypto bot on Windows 10"
 date:   2020-8-25 8:05:55 +0100
 image:  /images/freqtrade_main.JPG
 tags:   Freqtrader crypto bitcoin trading bot
