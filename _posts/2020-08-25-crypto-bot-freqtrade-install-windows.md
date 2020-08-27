@@ -1,23 +1,45 @@
 ---
 layout: post
-title:  "Freqtrader part 1: Running our open source crypto bot on Windows 10"
+title:  "freqtrader part 1: Running your open source crypto bot on Windows 10"
 date:   2020-8-25 8:05:55 +0100
 image:  /images/10.jpg
 tags:   Freqtrader crypto bitcoin trading bot
 description: How-to guide to create your own local Windows 10 Freqtrader crypto bot to start to test your crypto strategies today.
 ---
 
+I've been pretty fascinated about trading and crypto from years ago, money just loses it's value, automated algorithmic trading offers a way your computer work as your personal money manager, just under your orders, crypto promises a world with cheap and secure transaction fees, and a shield for inflation.
 
-## Intro about open source crypto trading bots
+As i´m not the only one that thinks about this stuff, there are already some very interesting open source projects that aim to automatize crypto trading.
 
-### What is a cripto bot?
+WARNING: This document has no intention of persuade nobody to invest money in anything. It's just a informative about how running a program already available. I am not responsible in any way for any money you invest, only your hability creating algorithms is.
 
-### Open source crypto bots as 2020
+## About open source crypto trading bots
+
+### What is a crypto bot?
+In brief: It's a program made to execute automated orders in a cryptocurrency exchange.
+
+What this means? With this tools we can make a computer locally, or on the cloud buy and sell cryptos based on our strategies.
+
+Most of them also have integrated more tools to develop our strategies like backtracking, plotting the data, or optimize our strategy using some kind of AI.
+
+The money we can earn or loose depends on our strategy, and this is the hard part.
+
+For this guide i'll using freqtrade and will show how to test your own strategies under windows docker.
+
+### Why Freqtrade?
+
+I tried to use Zenbot, but Docker install under Windows was not possible, It's made in Node.js and looks like a nice program.
+
+In the other hand, i already had used freqtade for some months now on a cloud server with dry run and has not given any problem.
+
+It's Python 3 based and well mantained, each time is better doccumented and has more features, and i hadn't found any serious bugs. This plus tha ability to run your tests from Windows make it the best alternative.
 
 ## Freqtrader local setup
 
 ### Initial requeriments
-Updated Windows 10 or Windows 10 Home OS with git
+Updated Windows 10 or Windows 10 Home OS with git already installed
+Some knowledge aout the command line
+A brain interested in algorithms
 
 ### Setting up our Docker enviroment on Win 10
 
@@ -122,7 +144,7 @@ This is updated in August 2020, check the strategies list to see if there are an
 
 {% highlight shell %}
 
-docker-compose run --rm freqtrade backtesting --strategy-list ADXMomentum AdxSmas ASDTSRockwellTrading  AverageStrategy AwesomeMacd BbandRsi BinHV27 BinHV45 CCIStrategy ClucMay72018 CMCCWinner CofiBitStrategy  CombineBinHAndCluc EMASkipPump Low_BB MACDStrategy MACDStrategy_crossed MultiRSI Quickie ReinforcedAverageStrategy ReinforcedQuickie ReinforcedSmoothScalp Scalp SmoothOperator SmoothScalp TDSequentialStrategy --timeframe 5m --fee 0.001
+docker-compose run --rm freqtrade backtesting --strategy-list ADXMomentum AdxSmas ASDTSRockwellTrading  AverageStrategy AwesomeMacd BbandRsi BinHV27 BinHV45 CCIStrategy ClucMay72018 CMCWinner CofiBitStrategy  CombinedBinHAndCluc EMASkipPump Low_BB MACDStrategy MACDStrategy_crossed MultiRSI Quickie Scalp TDSequentialStrategy --timeframe 5m --fee 0.001 --export trades
 
 {% endhighlight %}
 
@@ -133,56 +155,8 @@ The backtesting tool is also a very powerfull one with a lot of options, giving 
 #### General Result
 In my case i get this results:
 
-{% highlight shell %}
+![]({{site.baseurl}}/images/freqtrade_main.JPG)
 
-=============== SUMMARY METRICS ===============
-| Metric                | Value               |
-|-----------------------+---------------------|
-| Backtesting from      | 2020-05-19 02:30:00 |
-| Backtesting to        | 2020-08-27 09:55:00 |
-| Total trades          | 1769                |
-| First trade           | 2020-05-19 02:35:00 |
-| First trade Pair      | XTZ/BTC             |
-| Total Profit %        | -197.47%            |
-| Trades per day        | 17.69               |
-| Best day              | 22.59%              |
-| Worst day             | -90.06%             |
-| Days win/draw/lose    | 50 / 0 / 51         |
-| Avg. Duration Winners | 5:13:00             |
-| Avg. Duration Loser   | 8:20:00             |
-|                       |                     |
-| Max Drawdown          | 241.95%             |
-| Drawdown Start        | 2020-05-31 11:50:00 |
-| Drawdown End          | 2020-08-25 17:05:00 |
-| Market change         | 40.0%               |
-===============================================
-
-=================================================================== STRATEGY SUMMARY ===================================================================
-|             Strategy |   Buys |   Avg Profit % |   Cum Profit % |   Tot Profit BTC |   Tot Profit % |     Avg Duration |   Wins |   Draws |   Losses |
-|----------------------+--------+----------------+----------------+------------------+----------------+------------------+--------+---------+----------|
-|          ADXMomentum |    646 |          -0.20 |        -128.61 |      -0.01287368 |         -12.86 |          2:31:00 |    293 |       0 |      353 |
-|              AdxSmas |   4395 |          -0.15 |        -653.11 |      -0.06537630 |         -65.31 |          2:54:00 |   1424 |       1 |     2970 |
-| ASDTSRockwellTrading |  12692 |          -0.22 |       -2787.83 |      -0.27906189 |        -278.78 |          0:43:00 |   2594 |       0 |    10098 |
-|      AverageStrategy |   9838 |          -0.23 |       -2238.01 |      -0.22402506 |        -223.80 |          1:26:00 |   1678 |       1 |     8159 |
-|          AwesomeMacd |   2971 |          -0.22 |        -648.28 |      -0.06489282 |         -64.83 |          4:57:00 |    647 |       0 |     2324 |
-|             BbandRsi |   1023 |           0.20 |         202.58 |       0.02027842 |          20.26 |         13:37:00 |    642 |       0 |      381 |
-|              BinHV27 |    588 |           0.22 |         130.77 |       0.01308980 |          13.08 |          4:48:00 |    351 |       0 |      237 |
-|              BinHV45 |    135 |           0.29 |          39.81 |       0.00398500 |           3.98 |          3:10:00 |    115 |       0 |       20 |
-|          CCIStrategy |    198 |           0.11 |          22.58 |       0.00226002 |           2.26 |         22:29:00 |     66 |       0 |      132 |
-|         ClucMay72018 |    107 |           0.45 |          47.97 |       0.00480145 |           4.80 |          0:24:00 |     91 |       0 |       16 |
-|            CMCWinner |    842 |          -0.05 |         -38.52 |      -0.00385632 |          -3.85 |          2:54:00 |    400 |     374 |       68 |
-|      CofiBitStrategy |   1882 |          -0.14 |        -255.16 |      -0.02554111 |         -25.52 |          0:28:00 |    653 |       1 |     1228 |
-|  CombinedBinHAndCluc |    167 |           0.67 |         112.10 |       0.01122137 |          11.21 |          1:09:00 |    122 |       0 |       45 |
-|          EMASkipPump |   4997 |          -0.10 |        -488.95 |      -0.04894440 |         -48.90 |          2:56:00 |   2643 |       1 |     2353 |
-|               Low_BB |     34 |          -0.64 |         -21.90 |      -0.00219256 |          -2.19 | 3 days, 13:53:00 |      5 |       0 |       29 |
-|         MACDStrategy |   1479 |           0.04 |          57.51 |       0.00575680 |           5.75 |         11:31:00 |    989 |       0 |      490 |
-| MACDStrategy_crossed |    315 |           0.40 |         126.75 |       0.01268736 |          12.67 |  2 days, 0:10:00 |    289 |       0 |       26 |
-|             MultiRSI |   2178 |          -0.18 |        -387.14 |      -0.03875312 |         -38.71 |          2:03:00 |   1155 |       0 |     1023 |
-|              Quickie |    504 |           0.46 |         232.03 |       0.02322628 |          23.20 |  1 day, 16:33:00 |    471 |       0 |       33 |
-|                Scalp |   1888 |          -0.15 |        -282.38 |      -0.02826617 |         -28.24 |          0:27:00 |    664 |       1 |     1223 |
-| TDSequentialStrategy |   1769 |          -0.11 |        -197.47 |      -0.01976711 |         -19.75 |          6:38:00 |    959 |       0 |      810 |
-========================================================================================================================================================
-{% endhighlight %}
 
 I can see from all testes strategies my more profitable ones where:
 1. Quickie with an impressive ***232%***
@@ -198,45 +172,6 @@ Testing multiple strategies at multiple coins can be good to have a big idea of 
 My results look like this for Quickie:
 
 {% highlight shell %}
-Result for strategy Quickie
-============================================================= BACKTESTING REPORT ============================================================
-|      Pair |   Buys |   Avg Profit % |   Cum Profit % |   Tot Profit BTC |   Tot Profit % |     Avg Duration |   Wins |   Draws |   Losses |
-|-----------+--------+----------------+----------------+------------------+----------------+------------------+--------+---------+----------|
-| MATIC/BTC |     70 |           0.25 |          17.54 |       0.00175552 |           1.75 |         19:43:00 |     59 |       0 |       11 |
-|   BAT/BTC |     55 |           0.38 |          21.03 |       0.00210529 |           2.10 |   1 day, 0:56:00 |     53 |       0 |        2 |
-|   ETH/BTC |     20 |           0.47 |           9.44 |       0.00094464 |           0.94 | 3 days, 16:06:00 |     18 |       0 |        2 |
-|   BRD/BTC |     67 |           0.28 |          18.78 |       0.00187973 |           1.88 |         18:13:00 |     63 |       0 |        4 |
-|   EOS/BTC |     20 |           0.25 |           5.10 |       0.00051038 |           0.51 |  4 days, 1:50:00 |     19 |       0 |        1 |
-|  IOTA/BTC |     37 |           0.67 |          24.87 |       0.00248919 |           2.49 |  1 day, 19:07:00 |     35 |       0 |        2 |
-|  LINK/BTC |     39 |          -0.05 |          -2.14 |      -0.00021469 |          -0.21 |  1 day, 12:53:00 |     37 |       0 |        2 |
-|   LTC/BTC |     17 |           0.70 |          11.90 |       0.00119158 |           1.19 | 4 days, 19:56:00 |     16 |       0 |        1 |
-|   NEO/BTC |     38 |           0.78 |          29.72 |       0.00297509 |           2.97 |  1 day, 10:55:00 |     36 |       0 |        2 |
-|   NXS/BTC |     56 |           0.51 |          28.78 |       0.00288134 |           2.88 |         18:44:00 |     53 |       0 |        3 |
-|   XMR/BTC |     30 |           0.67 |          20.15 |       0.00201701 |           2.01 |  2 days, 5:46:00 |     28 |       0 |        2 |
-|   XRP/BTC |     18 |           0.28 |           5.04 |       0.00050476 |           0.50 | 4 days, 16:19:00 |     17 |       0 |        1 |
-|   XTZ/BTC |     37 |           1.13 |          41.82 |       0.00418644 |           4.18 |  1 day, 22:52:00 |     37 |       0 |        0 |
-|     TOTAL |    504 |           0.46 |         232.03 |       0.02322628 |          23.20 |  1 day, 16:33:00 |    471 |       0 |       33 |
-====================================================== SELL REASON STATS ======================================================
-|   Sell Reason |   Sells |   Wins |   Draws |   Losses |   Avg Profit % |   Cum Profit % |   Tot Profit BTC |   Tot Profit % |
-|---------------+---------+--------+---------+----------+----------------+----------------+------------------+----------------|
-|           roi |     471 |    471 |       0 |        0 |           1.13 |         531.44 |       0.0531971  |          53.14 |
-|   sell_signal |      16 |      0 |       0 |       16 |          -2.34 |         -37.51 |      -0.00375511 |          -3.75 |
-|    force_sell |      10 |      0 |       0 |       10 |          -8.58 |         -85.85 |      -0.00859316 |          -8.58 |
-|     stop_loss |       7 |      0 |       0 |        7 |         -25.15 |        -176.05 |      -0.0176225  |         -17.6  |
-========================================================== LEFT OPEN TRADES REPORT ==========================================================
-|      Pair |   Buys |   Avg Profit % |   Cum Profit % |   Tot Profit BTC |   Tot Profit % |     Avg Duration |   Wins |   Draws |   Losses |
-|-----------+--------+----------------+----------------+------------------+----------------+------------------+--------+---------+----------|
-| MATIC/BTC |      1 |          -7.61 |          -7.61 |      -0.00076145 |          -0.76 | 9 days, 22:20:00 |      0 |       0 |        1 |
-|   BAT/BTC |      1 |         -14.87 |         -14.87 |      -0.00148853 |          -1.49 |  3 days, 1:10:00 |      0 |       0 |        1 |
-|   ETH/BTC |      1 |          -7.96 |          -7.96 |      -0.00079651 |          -0.80 | 12 days, 2:05:00 |      0 |       0 |        1 |
-|   BRD/BTC |      1 |          -2.12 |          -2.12 |      -0.00021196 |          -0.21 | 2 days, 21:10:00 |      0 |       0 |        1 |
-|   EOS/BTC |      1 |         -13.88 |         -13.88 |      -0.00138962 |          -1.39 | 9 days, 20:00:00 |      0 |       0 |        1 |
-|  IOTA/BTC |      1 |         -11.30 |         -11.30 |      -0.00113160 |          -1.13 | 5 days, 21:15:00 |      0 |       0 |        1 |
-|   LTC/BTC |      1 |          -4.08 |          -4.08 |      -0.00040842 |          -0.41 | 7 days, 23:05:00 |      0 |       0 |        1 |
-|   NEO/BTC |      1 |          -3.10 |          -3.10 |      -0.00030993 |          -0.31 | 2 days, 22:50:00 |      0 |       0 |        1 |
-|   XMR/BTC |      1 |          -8.02 |          -8.02 |      -0.00080283 |          -0.80 | 5 days, 20:55:00 |      0 |       0 |        1 |
-|   XRP/BTC |      1 |         -12.91 |         -12.91 |      -0.00129231 |          -1.29 | 23 days, 5:55:00 |      0 |       0 |        1 |
-|     TOTAL |     10 |          -8.58 |         -85.85 |      -0.00859316 |          -8.58 |  8 days, 8:52:00 |      0 |       0 |       10 |
 =============== SUMMARY METRICS ===============
 | Metric                | Value               |
 |-----------------------+---------------------|
@@ -260,6 +195,16 @@ Result for strategy Quickie
 ===============================================
 {% endhighlight %}
 
+![]({{site.baseurl}}/images/freqtrade_quickie.JPG)
+
 ### Recap
 
+
+If you followed this guide, you should be able to continue testing yout crypto strategies. Good luck
+
+### Aknowledgments
+
+This quick intall guide is based on documentation available on [freqtrade docs](https://www.freqtrade.io/en/latest/) and is way more extensive, and as i said very well documented.
+
+Cheers for all developers maintaining and upgrading this nice program, if this tutorial feel usefull for you feel free to [donate them](https://github.com/freqtrade/freqtrade)
 
