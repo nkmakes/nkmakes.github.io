@@ -263,6 +263,3 @@ Result for strategy Quickie
 ### Recap
 
 
-![Hass homeassistant timelapse photo check]({{site.baseurl}}/images/hass_service_test.png)
-
-
