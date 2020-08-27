@@ -37,9 +37,9 @@ And depending on your driver choice:
 - 1x apc or lpc stl
 - 2x wago_apc or wago_lpc stl
 
-![]({{ site.baseurl }}/images/render_apc.PNG)
+![grass grow assiistant apc driver variant]({{ site.baseurl }}/images/render_apc.PNG)
 
-![]({{ site.baseurl }}/images/render_lpc.PNG)
+![grass grow assiistant lpc driver variant]({{ site.baseurl }}/images/render_lpc.PNG)
 
 ## Components
 
@@ -64,4 +64,4 @@ For this you will need the 5 way wago connectors, where you connect both ends of
 
 AC drivers cables should be connected using connector of your coice to the AC cable with its corresponding plug.
 
-![]({{ site.baseurl }}/images/led_mw20w_back.jpg)
+![grass grow assiistant back photo]({{ site.baseurl }}/images/led_mw20w_back.jpg)

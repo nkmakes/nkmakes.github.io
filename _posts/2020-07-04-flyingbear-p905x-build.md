@@ -62,8 +62,8 @@ This post is about the first 3d printer i got, the flyingbear P905X from aliexpr
     - Bed bearings and motor coupler
 
 ### Final result
-![p905x assembly]({{site.baseurl}}/images/p9051.jpg)
-![p905x assembly]({{site.baseurl}}/images/p9052.jpg)
-![p905x assembly]({{site.baseurl}}/images/p9053.jpg)
+![p905x assembly foto from front]({{site.baseurl}}/images/p9051.jpg)
+![p905x assembly from side]({{site.baseurl}}/images/p9052.jpg)
+![p905x assembly from back]({{site.baseurl}}/images/p9053.jpg)
 
 

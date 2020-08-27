@@ -16,13 +16,13 @@ The model is very easy to print and build, no supports needed, had some problems
 ## Electronics
 As mentioned i used a esp32 arduino sized board and mounted over it a little homemade shield with a tb6612 driver and external VIN with the following schematic scheme.
 
-![]({{site.baseurl}}/images/smars_electronics.JPG)
+![Smars robotic tank ep32 electronics]({{site.baseurl}}/images/smars_electronics.JPG)
 
 Notice that all of the tb6612 are soldered to male pin headers to be able to configure the pins at will.
 
-![]({{site.baseurl}}/images/smars_hat1.jpg)
+![Smars robotic tank ep32 electrnoic hat front]({{site.baseurl}}/images/smars_hat1.jpg)
 
-![]({{site.baseurl}}/images/smars_hat2.jpg)
+![Smars robotic tank ep32 electronic hat back]({{site.baseurl}}/images/smars_hat2.jpg)
 
 ## Code
 
@@ -39,6 +39,6 @@ The board creates a WiFi hotspot, and a async server. In the html server, a joys
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uIImwilvI2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-[smars-link]: https://www.thingiverse.com/thing:2662828
+
 
 
