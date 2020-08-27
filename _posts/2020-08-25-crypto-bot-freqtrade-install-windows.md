@@ -204,7 +204,7 @@ My results look like this for Quickie:
 
 If you followed this guide, you should be able to continue testing yout crypto strategies. Good luck
 
-### Aknowledgments
+### Acknowledgement
 
 This quick intall guide is based on documentation available on [freqtrade docs](https://www.freqtrade.io/en/latest/) and is way more extensive, and as i said very well documented.
 
