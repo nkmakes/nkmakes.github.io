@@ -2,7 +2,7 @@
 layout: post
 title:  "freqtrader part 1: Running your open source crypto bot on Windows 10"
 date:   2020-8-25 8:05:55 +0100
-image:  /images/10.jpg
+image:  /images/freqtrade_main.JPG
 tags:   Freqtrader crypto bitcoin trading bot
 description: How-to guide to create your own local Windows 10 Freqtrader crypto bot to start to test your crypto strategies today.
 ---
@@ -24,7 +24,7 @@ Most of them also have integrated more tools to develop our strategies like back
 
 The money we can earn or loose depends on our strategy, and this is the hard part.
 
-For this guide i'll using freqtrade and will show how to test your own strategies under windows docker.
+For this guide i'll using freqtrade and will show how to test your own strategies under windows 10 OS.
 
 ### Why Freqtrade?
 
@@ -34,7 +34,11 @@ In the other hand, i already had used freqtade for some months now on a cloud se
 
 It's Python 3 based and well mantained, each time is better doccumented and has more features, and i hadn't found any serious bugs. This plus tha ability to run your tests from Windows make it the best alternative.
 
-## Freqtrader local setup
+You can find more about it in project [github page](https://github.com/freqtrade/freqtrade) or [docs](https://www.freqtrade.io/en/latest/).
+
+The docs are very well documented and contain a larger but better starter guide, this post is not trying to replace them, just offers a quick start.
+
+## Freqtrade local setup
 
 ### Initial requeriments
 Updated Windows 10 or Windows 10 Home OS with git already installed
@@ -74,8 +78,6 @@ docker-compose run --rm freqtrade create-userdir --userdir user_data
 # Create configuration - Requires answering interactive questions
 docker-compose run --rm freqtrade new-config --config user_data/config.json
 {% endhighlight %}
-
-
 
 
 
@@ -155,7 +157,7 @@ The backtesting tool is also a very powerfull one with a lot of options, giving 
 #### General Result
 In my case i get this results:
 
-![]({{site.baseurl}}/images/freqtrade_main.JPG)
+![freqtrade first general backtrack run]({{site.baseurl}}/images/freqtrade_main.JPG)
 
 
 I can see from all testes strategies my more profitable ones where:
@@ -195,7 +197,7 @@ My results look like this for Quickie:
 ===============================================
 {% endhighlight %}
 
-![]({{site.baseurl}}/images/freqtrade_quickie.JPG)
+![Quickie freqtrade results]({{site.baseurl}}/images/freqtrade_quickie.JPG)
 
 ### Recap
 
