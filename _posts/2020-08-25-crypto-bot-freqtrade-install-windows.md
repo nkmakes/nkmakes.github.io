@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Freqtrader part 1: Running your open source crypto bot on Windows 10"
+title:  "Freqtrade part 1: Running your open source crypto bot on Windows 10"
 date:   2020-8-25 8:05:55 +0100
 image:  /images/freqtrade_main.JPG
 tags:   Freqtrader crypto bitcoin trading bot
-description: How-to guide to create your own local Windows 10 Freqtrader crypto bot to start to test your crypto strategies today.
+description: How-to guide to create your own local Windows 10 Freqtrade crypto bot to start to test your crypto strategies today.
 ---
 
 I've been pretty fascinated about trading and crypto from years ago, money just loses it's value, automated algorithmic trading offers a way your computer work as your personal money manager, just under your orders, crypto promises a world with cheap and secure transaction fees, and a shield for inflation.
@@ -28,7 +28,8 @@ For this guide i'll using freqtrade and will show how to test your own strategie
 
 ### Why Freqtrade?
 
-Paid alternatives are getting more and more exposure each day, but in the open-sorce space there are 3 mayor alternatives [Zenbot](https://github.com/DeviaVir/zenbot),[Freqtrade](https://github.com/freqtrade/freqtrade) and [Crypto-trading-bot](https://github.com/Haehnchen/crypto-trading-bot)
+Paid alternatives are getting more and more exposure each day, but in the open-sorce space there are 3 mayor alternatives [Zenbot](https://github.com/DeviaVir/zenbot),[Freqtrade](https://github.com/freqtrade/freqtrade),[Crypto-trading-bot](https://github.com/Haehnchen/crypto-trading-bot) and [jess-AI](https://jesse-ai.com/).
+The last twoo looked like newer options and not so stable yet, but resolve some of the other frameworks problems, will be checking their updates for future posts.
 
 I tried to use Zenbot, but Docker install under Windows was not possible at the moment, It's made in Node.js and looks like a nice program, but i just wanted to run test while i work on my Windows OS so i discarded this option.
 
