@@ -11,7 +11,7 @@ I've been pretty fascinated about trading and crypto from years ago, money just 
 
 As i´m not the only one that thinks about this stuff, there are already some very interesting open source projects that aim to automatize crypto trading.
 
-WARNING: This document has no intention of persuade nobody to invest money in anything. It's just a informative about how running a program already available. I am not responsible in any way for any money you invest, only your hability creating algorithms is.
+***WARNING: This document has no intention of persuade nobody to invest money in anything. It's just a informative about how running a program already available. I am not responsible in any way for any money you invest, only your hability creating algorithms is. ****
 
 ## About open source crypto trading bots
 
@@ -28,15 +28,22 @@ For this guide i'll using freqtrade and will show how to test your own strategie
 
 ### Why Freqtrade?
 
-I tried to use Zenbot, but Docker install under Windows was not possible, It's made in Node.js and looks like a nice program.
+Paid alternatives are getting more and more exposure each day, but in the open-sorce space there are 3 mayor alternatives [Zenbot](https://github.com/DeviaVir/zenbot),[Freqtrade](https://github.com/freqtrade/freqtrade) and [Crypto-trading-bot](https://github.com/Haehnchen/crypto-trading-bot)
+
+I tried to use Zenbot, but Docker install under Windows was not possible at the moment, It's made in Node.js and looks like a nice program, but i just wanted to run test while i work on my Windows OS so i discarded this option.
 
 In the other hand, i already had used freqtade for some months now on a cloud server with dry run and has not given any problem.
 
-It's Python 3 based and well mantained, each time is better doccumented and has more features, and i hadn't found any serious bugs. This plus tha ability to run your tests from Windows make it the best alternative.
+It's Python 3 based and well mantained, satble, and each time i get to the github page, has more features, i hadn't found any serious bugs. This plus tha ability to run your tests from Windows make it the best alternative.
+
+The only two thing i miss is a good graphical representation, but there has been lately a lot of improvements in this way, using Jupyter notebooks for some analysis, and some experimental WebUI to control it.
+There's also the limitation of the bot of just being able to open one position at a time on each pair.
 
 You can find more about it in project [github page](https://github.com/freqtrade/freqtrade) or [docs](https://www.freqtrade.io/en/latest/).
 
-The docs are very well documented and contain a larger but better starter guide, this post is not trying to replace them, just offers a quick start.
+The docs are very well documented and contain a larger but better starter guide, this post is not trying to replace them, just offers a quick start guide to test it under windows.
+
+The third one, Crypt-trading-bot looks like a newer player in the game, it's JS based and has a pretty interface
 
 ## Freqtrade local setup
 
@@ -47,7 +54,7 @@ A brain interested in algorithms
 
 ### Setting up our Docker enviroment on Win 10
 
-We need first to set up a docker enviroment on Windows 10. If you have Home edition OS, you will need to [install WSL 2 or Windows susbsistem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). Before this you need to have your OS updated to the last version to avoid problems.
+We need first to set up a docker enviroment on Windows 10. If you have Home edition OS, you will need to [install WSL 2 or Windows susbsistem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). **Before this you need to have your OS updated to the last version to avoid problems**.
 
 If you are lucky, you can directly install [Docker install Full Guide](https://docs.docker.com/docker-for-windows/install-windows-home/)
 
@@ -59,7 +66,7 @@ If you are lucky, you can directly install [Docker install Full Guide](https://d
 Once we got our Docker Desktop program installed, we need to setup our Docker container, for this we need to move to a folder using the windows terminal.
 In my case ill move to C:/Users/yourusername/Onedrive/docker, so i have a backup of everithing on onedrive.
 
-Once there We need to create a folder, in my case called freqtrade, weneed to create the user and file structure
+Once there We need to create a folder, in my case called freqtrade, weneed to create the user and file structure, instructions copied from [oficial docs](https://www.freqtrade.io/en/latest/docker/)
 
 
 
@@ -166,6 +173,8 @@ I can see from all testes strategies my more profitable ones where:
 3. BinHV27 with a nice ***130%***
 4. MACDStrategy_crossed with also ***126%***
 
+This are just orientative results, backtesting is not exactly the same as running in live mode or dry-run.
+
 
 #### Looking closer to each strategy
 
@@ -202,7 +211,7 @@ My results look like this for Quickie:
 ### Recap
 
 
-If you followed this guide, you should be able to continue testing yout crypto strategies. Good luck
+If you followed this guide, you should be able to continue testing yout crypto strategies. Now its your time to try other pairs/timeframes and crush your head thinking about profitable strategies. Good luck
 
 ### Acknowledgement
 
