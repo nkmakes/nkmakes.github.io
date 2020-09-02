@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Homeassistant (Hass.io) easy timelapse setup"
-date:   2020-09-08 8:05:55 +0100
+date:   2020-09-01 8:05:55 +0100
 image:  /images/timelapse_node.JPG
 tags:   homeassistant homeautomation esp32cam raspberrypi
 description: How-to guide to create your own timelapses from any Homeassistant camera entity the easy way, in this example, a esp32cam gonfigured with ESPHome.

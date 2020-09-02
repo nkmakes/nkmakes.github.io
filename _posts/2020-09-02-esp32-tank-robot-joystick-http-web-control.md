@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RC Esp32 tank robot joystick wifi controller"
+title:  "Esp32 tank robot joystick wifi controller"
 date:   2020-9-2 8:05:55 +0100
 image:  /images/10.jpg
 tags:   tank esp32 robot http javascript smars tb6612fng
