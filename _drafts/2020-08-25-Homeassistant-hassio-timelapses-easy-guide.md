@@ -9,7 +9,6 @@ description: How-to guide to create your own cool timelapses from any Homeassist
 
 
 ## Setting up Homeassistant
- [Smars modular robot project][smars-link].
 ### Initial requeriments
 Homeassistant
 Working camera entity
@@ -69,6 +68,8 @@ So to create the timelapse we will need to download the images using a samba ser
 We can access the photos of each day at your configured location, in my case /config/timelapses
 
 ### Creating the timelapse
+
+For this by the moment i'm using photoshop, as i'm retrieving the photos under a windows 10 OS, but there a re plenty of other solutions available
 
 
 [smars-link]: https://www.thingiverse.com/thing:2662828
