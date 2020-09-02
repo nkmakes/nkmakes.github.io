@@ -15,6 +15,8 @@ The following video shows how it works.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3jsNJ_2ksw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+---
+
 ## 1.The Esp32 code
 
 For this tutorial i'm going to use the code available on my [SMARS-esp32 repo](https://github.com/nkmakes/SMARS-esp32).
