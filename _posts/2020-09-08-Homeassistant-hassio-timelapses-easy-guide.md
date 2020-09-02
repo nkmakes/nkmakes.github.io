@@ -7,12 +7,13 @@ tags:   homeassistant homeautomation esp32cam raspberrypi
 description: How-to guide to create your own timelapses from any Homeassistant camera entity the easy way, in this example, a esp32cam gonfigured with ESPHome.
 ---
 
+After some time searching, i didn´t find a easy guide to make something as easy as getting a timelapse from a esp32cam on homeassistant, you can also can with the following guide.
 
 ## Setting up Homeassistant
 ### Initial requeriments
-Homeassistant
-Working camera entity
-Node-Red configured on hass.io server
+- Homeassistant
+- Working camera entity
+- Node-Red configured on hass.io server
 
 ### Setup folder permissions and installing needed modules
 
@@ -80,7 +81,5 @@ For this by the moment i'm using photoshop, as i'm retrieving the photos under a
 In my case i used the following video.
 
 [Create time-lapse video from still images guide by Adobe](https://helpx.adobe.com/es/premiere-pro/how-to/create-time-lapse-sequence.html)
-
-[smars-link]: https://www.thingiverse.com/thing:2662828
 
 
