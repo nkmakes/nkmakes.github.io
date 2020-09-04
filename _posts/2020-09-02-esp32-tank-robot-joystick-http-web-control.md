@@ -3,18 +3,29 @@ layout: post
 title:  "Esp32 tank robot joystick wifi controller"
 date:   2020-9-2 8:05:55 +0100
 image:  /images/entrada_tank.jpg
-tags:   tank esp32 robot http javascript smars tb6612fng
+tags:   tank esp32 robot javascript smars tb6612fng
 description: Tank robot simple implementation with esp32, tb6612 and wifi. Async http web server control, using just one joystick to control the movement.
 ---
 
 In this post, I will cover how to make a ESP32 tank robot Arduino sketch, using WiFi control. The idea is to control a small tank using http async web tecnologies, creating a webserver over the esp32 device that serves a JS based joytick. This JS app gathers the joystick position, remixes the results and sends the values needed for the motors of the tank.
 
-I'll use this code for my [SMARS tank](https://nkmakes.github.io/2020/08/10/smars-esp32-wifi-robot-tank/) and for my [MR-6 tank](https://www.thingiverse.com/thing:2753227), for the later, as is based around ESP32-cam module, i'll also add to the guide in the future how to make the video stream.
+I'll use this code for my [SMARS tank](https://nkmakes.github.io/2020/08/10/smars-esp32-wifi-robot-tank/) and for my [MR-6 tank](https://www.thingiverse.com/thing:2753227), for the later, as is based around ESP32-cam module, i'll also add to the guide in the future how to make the video stream. But this method should work on any similar robot/tank.
 
-The following video shows how it works.
+The following video shows it in action.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3jsNJ_2ksw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+## Acknowledgement
+This post would't be possible or not as easy, withouth the contribution of the people that made the following libraries and posts, big cheers to all of them:
+
+- [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
+- [TB6612_ESP32](https://github.com/pablopeza/TB6612FNG_ESP32)
+- [jostick JS library from bobbotek](https://github.com/bobboteck/JoyStick)
+- [Differential control](https://www.impulseadventure.com/elec/robot-differential-steering.html)
+- [Async service](https://github.com/neonious/lowjs_esp32_examples/blob/master/neonious_one/cellphone_controlled_rc_car/www/index.html)
+- [web baker](https://gchq.github.io/CyberChef/#recipe=Gzip('Dynamic%20Huffman%20Coding','index.html.gz','',false)To_Hex('0x',0)Split('0x',',0x'))
+- [Editing the ESP32-CAM Camera Web Server HTML](https://robotzero.one/esp32-cam-custom-html/)
 ---
 
 ## 1.The Esp32 code
