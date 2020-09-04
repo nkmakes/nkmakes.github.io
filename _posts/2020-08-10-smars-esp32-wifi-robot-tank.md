@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "SMARS esp32 wifi robot tank"
+title:  "SMARS esp32 wifi 3dprinted robot tank"
 date:   2020-8-10 8:05:55 +0100
 image:  /images/10.jpg
-tags:   smars esp32 robot
+tags:   smars esp32 robot tank 3dprinted
 description: SMARS tank robot simple implementation with esp32, tb6612 and wifi async server hotspot control
 ---
 
