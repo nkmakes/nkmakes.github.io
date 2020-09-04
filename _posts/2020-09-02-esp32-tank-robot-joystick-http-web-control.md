@@ -2,7 +2,7 @@
 layout: post
 title:  "Esp32 tank robot joystick wifi controller"
 date:   2020-9-2 8:05:55 +0100
-image:  /images/entrada_tank.png
+image:  /images/entrada_tank.jpg
 tags:   tank esp32 robot http javascript smars tb6612fng
 description: Tank robot simple implementation with esp32, tb6612 and wifi. Async http web server control, using just one joystick to control the movement.
 ---
