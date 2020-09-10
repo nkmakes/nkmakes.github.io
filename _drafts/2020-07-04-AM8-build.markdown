@@ -79,12 +79,5 @@ AC drivers cables should be connected using connector of your coice to the AC ca
 
 ### 3d Printer
 
-### Octoprint Server and table
 
 ## Photos of finished build
-
-## End 
-
-You can find more detailed instructions on how to build this project on [instructables][instructables-link]
-
-[instructables-link]: https://www.instructables.com/id/30-3D-Printed-Efficient-Led-Grow-Light/
