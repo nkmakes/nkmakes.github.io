@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "API and UI for fully 3d printed turntables based on esp8266 "
+title:  "Fully 3d printed turntable based on esp8266 "
 date:   2020-9-10 8:05:55 +0100
 image:  /images/v1_fusion.PNG
 tags:   3dprinted esp8266 esp32 Javascript
@@ -22,25 +22,25 @@ You set your desired moves in two ways:
 ---
 ## Required components
 
-1x nodemcu esp8266
-1x 12V to 5v Buck converter
-1x 28-byj
-1x uln2003
-1x 12V power source
-1x Female Jack adapter with screw terminals
-6x Female to female Dupont cables
-4x M3 screws and nuts
+- 1x nodemcu esp8266
+- 1x 12V to 5v Buck converter
+- 1x 28-byj
+- 1x uln2003
+- 1x 12V power source
+- 1x Female Jack adapter with screw terminals
+- 6x Female to female Dupont cables
+- 4x M3 screws and nuts
 
 ---
 ## 3dprinted components
 
 ### From [original design](https://www.thingiverse.com/thing:3958326)
-1 Outer Gear
-1 Inner Gear
+- 1 Outer Gear
+- 1 Inner Gear
 
 ### From my [mod files](https://www.thingiverse.com/thing:4142700)
-1 BasePlate
-1 Top platform from your election
+- 1 BasePlate
+- 1 Top platform from your election
 
 ---
 ## Build Guide
@@ -127,6 +127,7 @@ Currently supports the following http GET requests:
         - speed: Max speed in the move
         - accel: Acceleration of the move
 
+---
 ## Acknowledgments
 - First and foremost, i wan't to express my gratitude to Thingiverse user Bribro12, designer of the [Fully 3d-printable turntable](https://www.thingiverse.com/thing:3723618) for sharing his design and Fusion files so i could remix it.
 - All the open source developers that creating the following amazing libraries and sketchs and/or collaborated in any way, specially in the following projects:
