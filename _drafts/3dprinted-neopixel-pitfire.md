@@ -11,35 +11,42 @@ thingiverse: https://www.thingiverse.com/thing:4094951
 myminifactory: https://www.myminifactory.com/es/object/3d-print-30-very-efficient-led-grow-light-117785
 ---
 
-INTRO
+
 
 ## 3D Design and printed parts
 
+This object is based around two 3d printed parts, a flame, designed to be 3d printed in vase mode, preferently in white or transparent plastic, and a base that fits the neopixel ring and the esp32 dev board.
 
+For the base i provide two stl's, a simple base withouth any magic or a "stone pitfire" look, but you have unlimited options, you can find in the github repo of this project, original fusion 360 files so you can add any base that you could imagine, or if you are not familiar with the program, you can also edit the blank stl base file with Tinkercad, which is way easier for beginners.
 
-## Acknowledgements
-
-
+For the base i used 0.4 mm nozzle 0.3 mm height with 2 bottom and top layers and 2 permiter lines with 10% infill and works ok, for the flame you should print it with vase print, no botom layer, and some with some brim to fix it to the hotplate.
+Both prints should be under 80gr of plastic.
 
 
 ## Components
 
 | number | Component                           |
 | ------ | ----------------------------------- |
-| 4      | BXEB L0280                          |
-| 30     | M3 25mm aprox screws and nuts       |
-| 2      | M2 / M2.5 25mm screws ands nuts     |
-| 1      | Meanwell APC-35-1050 or LPC-60-1400 |
-| 1      | 220v/110v AC cable with plug        |
-| 2      | 5way WAGO                           |
-| 2      | cable connector                     |
-| 2      | 18-24 AWG cable (RED/BLACK)         |
+| 1      | 16 led Neopixel ring                |
+| 1      | esp32 30 pin dev board              |
+| 3      | broken female dupont wires(or two female-female)|
+| 1      | 2A microUSB cable                   |
+| 1      | 5V 2A USB power source              |
+| 80 gr  | PLA filament                        |
 
 
 
 ## Electrical connections
 
+Electric connections on this project are very simple.
+First, you need to cut three dupont female ends with some 6 cm of cable each, and solder them to the three pads you can find on the underside of the Neopixel Ring labelled as 5V, GND and DI.
 
+They go connected the next way:
+| esp32 | Neopixel |
+| ----- | -------- |
+|VIN|5V|
+|GND|GND|
+|D2|DI|
 
 ## ESP32 WLED install and config
 
