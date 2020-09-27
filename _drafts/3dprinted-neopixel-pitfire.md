@@ -50,14 +50,18 @@ They go connected the next way:
 
 ## ESP32 WLED install and config
 
+For the control of the leds we are going to use [WLED program](), with this we are going to be able to control our LEDs from any web browser as an AP, or we can can also add it to our local network, and it's integrable to most of the smart home applications as HASS or OpenHAB.
 
+You can refeer to original [WLED install guide]() for updated install steps, but in brief, at time of writing this gudie, we need to:
+1. Download latest [ESP flashing tool]().
+2. Download latest [ESP32 firmware]().
+3. Flash the firmware.
+At this point, we should be able to connect to the board and conect to the AP on 1.2.3.4 using the passw wled4321.
+4. If we want to control it from the local network, add local net credentials.
+5. If we want to add it to HASS, it should automatically appear as a device.
 
-## Homeassistant integration
+## Final assembly
 
-
+To assembly the device, we need to first connect the three cables to the ESP32 dev board, then place it insedie of the circle, connect the cable and put the board in the final position. If we want to fix the Neopixel ring in place you can use a bit of liquid adhesive.
 
 ## Final Result
-
-
-
-
