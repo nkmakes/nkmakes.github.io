@@ -49,20 +49,17 @@ First, you need to cut three dupont female ends with some 6 cm of cable each, an
 
 ![Neopixel pitfire desk lamp LED ring ready]({{site.baseurl}}/images/neopixel_top.jpg) 
 
-<br>
 
 They go connected the next way:
-| esp32 | Neopixel |
-| ----- | -------- |
-|VIN|5V|
-|GND|GND|
-|D2|DI|
+|  esp32 | Neopixel |
+|  ----- | -------- |
+| VIN    | 5V       |
+| GND    | GND      |
+| D2     | DI       |
 
-<br>
 
 ![esp32 neopixel schematics 30 pin]({{site.baseurl}}/images/esp32_neopixel_schematics.JPG)
 
-<br>
 
 
 ---
@@ -91,11 +88,8 @@ To assembly the device,
 4. Place the flame
 5. Enjoy!
 
-<br>
-
 ![Neopixel pitfire desk lamp rocks base]({{site.baseurl}}/images/base_stone.JPG)
 
-<br>
 
 ## Final Result
 
