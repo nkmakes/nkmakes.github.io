@@ -90,7 +90,8 @@ To assembly the device,
 4. Place the flame
 5. Enjoy!
 
-![Neopixel pit fire desk lamp final assembly]({{site.baseurl}}/images/flame_principal.jpg)
+![Neopixel pit fire desk lamp final assembly base]({{site.baseurl}}/images/base_stone.JPG)
+![Neopixel pit fire desk lamp final assembly front]({{site.baseurl}}/images/flame_principal.jpg)
 
 
 ## Final Result
