@@ -1,17 +1,17 @@
 ---
 layout: project
-title:  3dprinted desk lamp with rgb flame
-subtitle: Fully 3dprinteable pitfire desk lamp, based upon 16 ws2812b LED ring and esp32. 
+title:  3dprinted fire pit rgb desk lamp
+subtitle: Fully 3dprintable fire pit rgb desk lamp, with a flame shaped light based around ws2812b Neopixel 16 led Ring and esp32.
 image:  /images/led_mw20w_front.jpg
 tags:   neopixel esp32 homeassistant iot
-description: Fully 3dprinteable pitfire desk lamp, with a flame shaped light based around ws2812b Neopixel 16 led Ring and esp32.
+description: Fully 3dprintable fire pit rgb desk lamp, with a flame shaped light based around ws2812b Neopixel 16 led Ring and esp32.
 hackaday: https://hackaday.io/project/170979-best-diy-led-grow-light-fully-3dprinted-for-30
 thingiverse: https://www.thingiverse.com/thing:4094951
 myminifactory: https://www.myminifactory.com/es/object/3d-print-30-very-efficient-led-grow-light-117785
 github: 
 ---
 
-Little rgb desklamp or moodlamp with flame shape based around Neopixel 16 led Ring. Comes with a *pitfire* style base and with a blank one to add it to any project. Ready to Web control with plenty of effects and Smart home integration using WLED.
+Fully 3dprintable fire pit rgb desk lamp, with a flame shaped light based around ws2812b Neopixel 16 led Ring and esp32. Comes with a *pitfire* style base and with a blank one to add it to any project. Ready to Web control with plenty of effects and Smart home integration using WLED.
 
 ---
 
@@ -60,6 +60,8 @@ They go connected the next way:
 |GND|GND|
 |D2|DI|
 
+<br>
+
 ![esp32 neopixel schematics 30 pin]({{site.baseurl}}/images/esp32_neopixel_schematics.JPG)
 
 
@@ -89,9 +91,12 @@ To assembly the device,
 4. Place the flame
 5. Enjoy!
 
+<br>
+
 ![Neopixel pitfire desk lamp rocks base]({{site.baseurl}}/images/base_stone.JPG)
----
+
+<br>
 
 ## Final Result
 
-//video de youtube
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w1SFw8w_Evw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
