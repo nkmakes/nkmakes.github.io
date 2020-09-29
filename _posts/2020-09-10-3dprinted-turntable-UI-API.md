@@ -3,7 +3,7 @@ layout: post
 title:  "Fully 3d printed turntable based on esp8266 "
 date:   2020-9-10 8:05:55 +0100
 image:  /images/v1_fusion.PNG
-tags:   3dprinted esp8266 esp32 Javascript
+tags:   3dprint esp8266 esp32 javascript
 description: Guide to build your own esp8266 wifi controlled turntable, based upon thingiverse user Bribro12 Fully 3D-printable turntable design.
 ---
 I wanted a turntable to show off some prints, and after looking all-around the web i falled into amazings Bribro12's [Fully 3d-printable turntable](https://www.thingiverse.com/thing:3723618) and [Arduino controlled photogrammetry 3D-scanner](https://www.thingiverse.com/thing:3958326) designs. 

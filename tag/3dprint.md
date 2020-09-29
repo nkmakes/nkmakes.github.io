@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: 3dprinter"
-tag: 3dprinter
+title: "Tag: 3dprint"
+tag: 3dprint
 robots: noindex
 ---

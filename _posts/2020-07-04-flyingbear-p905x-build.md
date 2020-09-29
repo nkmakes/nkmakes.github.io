@@ -3,7 +3,7 @@ layout: post
 title:  Flyingbear P905x build guide
 date:   2020-07-05 15:01:35 +0100
 image:  /images/p905_main.jpg
-tags:   3dprinter flyingbear p905x upgrades
+tags:   3dprint flyingbear p905x upgrades
 description: Flyingbear P905X Upgrades and assemby guide
 ---
 This post is about the first 3d printer i got, the flyingbear P905X from aliexpress. At the time i have designed and tried some of different upgrades so i will list a how-to for anybody willing to repair or upgrade this printer.
