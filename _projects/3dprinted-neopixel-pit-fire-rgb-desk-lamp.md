@@ -2,7 +2,7 @@
 layout: project
 title:  3dprintable fire pit rgb desk lamp
 subtitle: Fully 3dprintable fire pit rgb desk lamp, with a flame shaped light based on led Ring.
-image:  /images/flame_principal.jpg
+image:  /images/WLED-demo.jpg
 tags:   neopixel esp32 homeassistant iot
 description: 3dprintable fire pit rgb desk lamp, with a flame shaped light based on 16 Neopixel led Ring and esp32.
 github: https://github.com/nkmakes/3dprinted-neopixel-pitfire/
@@ -95,7 +95,7 @@ To assembly the device,
 4. Place the flame
 5. Enjoy!
 
-![Neopixel pit fire desk lamp final assembly base]({{site.baseurl}}/images/base_stone.JPG)
+![Neopixel pit fire desk lamp final assembly base]({{site.baseurl}}/images/base_stone.jpg)
 ![Neopixel pit fire desk lamp final assembly front]({{site.baseurl}}/images/flame_principal.jpg)
 
 
