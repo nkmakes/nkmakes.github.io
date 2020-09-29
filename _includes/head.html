@@ -1,58 +1,60 @@
 <head>
+<<<<<<< HEAD
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+=======
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+>>>>>>> parent of 211f503... Update head.html
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
-    <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}'> {% if page.layout == 'post' or page.layout == 'project' %}
-    <meta content="article" property="og:type"> {% else %}
-    <meta content="website" property="og:type"> {% endif %}
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
+  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}'>
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ " /feed.xml " | relative_url }}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
+  {% if page.layout == 'post' or page.layout == 'project' %}
+    <meta content="article" property="og:type">
+  {% else %}
+    <meta content="website" property="og:type">
+  {% endif %}
 
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}/favicon-16x16.png">
-    <link rel="manifest" href="{{site.baseurl}}/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-
-
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="shortcut icon" type="image/x-icon" 
+      href="{{site.baseurl}}/favicon.ico">
 
 
 
+  <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}/favicon-16x16.png">
+  <link rel="manifest" href="{{site.baseurl}}/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+      
+      
 
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <!-- Ionicons -->
-    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
-    <style>
-        {
-            % capture include_to_scssify %
-        }
-        
-        {
-            % include main.scss %
-        }
-        
-        {
-            % endcapture %
-        }
-        
-        {
-            {
-                include_to_scssify | scssify
-            }
-        }
-    </style>
 
-    {% if site.tags != "" %} {% include collecttags.html %} {% endif %} {% seo %}
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <!-- Ionicons -->
+  <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <style>
+  {% capture include_to_scssify %}
+    {% include main.scss %}
+  {% endcapture %}
+  {{ include_to_scssify | scssify }}
+  </style>
+
+  {% if site.tags != "" %}
+  {% include collecttags.html %}
+  {% endif %}
+
+  {% seo %}
 
 </head>
