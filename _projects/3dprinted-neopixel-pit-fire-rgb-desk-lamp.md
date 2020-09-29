@@ -58,8 +58,8 @@ First, you need to cut three dupont female ends with some 6 cm of cable each, an
 
 
 They go connected the next way:
-|  esp32 | Neopixel |
-|  ----- | -------- |
+| esp32  | Neopixel |
+| ------ | -------- |
 | VIN    | 5V       |
 | GND    | GND      |
 | D2     | DI       |
