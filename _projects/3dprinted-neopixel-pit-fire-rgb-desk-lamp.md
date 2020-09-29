@@ -18,7 +18,15 @@ Fully 3dprintable fire pit rgb desk lamp, with a flame shaped light based around
 
 This object is based around two 3d printed parts, a flame, designed to be 3d printed in vase mode, preferently in white or transparent plastic, and a base that fits the neopixel ring and the esp32 dev board.
 
+```html
+<script src="https://embed.github.com/view/3d/nkmakes/3dprinted-neopixel-pitfire/blob/master/3d-files/flames.stl"></script>
+```
+
 For the base i provide two stl's, a blank base or a "stone pitfire" look, but you have unlimited options, you can find in the github repo of this project, original fusion 360 files so you can add any base that you could imagine, or if you are not familiar with the program, you can also edit the blank stl base file with Tinkercad, which is way easier for beginners.
+
+```html
+<script src="https://embed.github.com/view/3d/nkmakes/3dprinted-neopixel-pitfire/blob/master/3d-files/base_stone.stl"></script>
+```
 
 For the base i used 0.4 mm nozzle 0.3 mm height with 3 bottom and top layers and 3 permiter lines with 10% infill and works ok, for the flame you should print it with vase print, no botom layer, and some with some brim to fix it to the hotplate.
 Both prints should be under 80gr of plastic, here's a little render of the result.
