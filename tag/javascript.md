@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: javascript"
+title: "Search Tag: javascript"
 tag: javascript
 robots: noindex
 ---

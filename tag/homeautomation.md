@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: homeautomation"
+title: "Search Tag: homeautomation"
 tag: homeautomation
 robots: noindex
 ---

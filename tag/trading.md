@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: trading"
+title: "Search Tag: trading"
 tag: trading
 robots: noindex
 ---

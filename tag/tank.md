@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: tank"
+title: "Search Tag: tank"
 tag: tank
 robots: noindex
 ---

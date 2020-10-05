@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: crypto"
+title: "Search Tag: crypto"
 tag: crypto
 robots: noindex
 ---

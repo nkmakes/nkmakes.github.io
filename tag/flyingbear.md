@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: flyingbear"
+title: "Search Tag: flyingbear"
 tag: flyingbear
 robots: noindex
 ---

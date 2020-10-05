@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: smars"
+title: "Search Tag: smars"
 tag: smars
 robots: noindex
 ---

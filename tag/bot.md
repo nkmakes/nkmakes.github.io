@@ -1,6 +1,6 @@
 ---
 layout: tag_page
-title: "Tag: bot"
+title: "Search Tag: bot"
 tag: bot
 robots: noindex
 ---
