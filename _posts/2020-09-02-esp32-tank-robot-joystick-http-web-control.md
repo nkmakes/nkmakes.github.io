@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Esp32 tank robot joystick wifi controller"
+title:  "Esp32 tb6612 joystick robot website controller"
 date:   2020-9-2 8:05:55 +0100
 image:  /images/entrada_tank.jpg
 tags:   tank esp32 robot javascript tb6612fng
