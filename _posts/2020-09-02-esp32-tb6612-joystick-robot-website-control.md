@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Esp32 tb6612 joystick robot website controller"
+title:  "Esp32 tb6612 joystick robot wifi controll"
 date:   2020-9-2 8:05:55 +0100
 image:  /images/entrada_tank.jpg
 tags:   tank esp32 robot javascript tb6612fng
-description: Tank robot simple implementation with esp32, tb6612 and wifi. Async http web server control, using just one joystick to control the movement.
+description: Esp32 joystick arduino sketch for a tb6612 and wifi tank robot. Async http web server control, using just one joystick to control the movement.
 ---
 
-In this post, I will cover how to make a ESP32 tank robot Arduino sketch, using WiFi control. The idea is to control a small tank using http async web tecnologies, creating a webserver over the esp32 device that serves a JS based joytick. This JS app gathers the joystick position, remixes the results and sends the values needed for the motors of the tank.
+In this post, I will cover how to make a ESP32 tank robot Arduino sketch, using WiFi control. The idea is to control a small tank using http async web tecnologies, creating a webserver over the esp32 device that serves a JS based joytick. This JS app gathers the joystick position, remixes the results and sends the values needed to control the motors of the tank.
 
 I'll use this code for my [SMARS tank](https://nkmakes.github.io/2020/08/10/smars-esp32-wifi-robot-tank/) and for my [MR-6 tank](https://www.thingiverse.com/thing:2753227), for the later, as is based around ESP32-cam module, i'll also add to the guide in the future how to make the video stream. But this method should work on any similar robot/tank.
 
@@ -57,7 +57,7 @@ const int offsetB = 1;
 
 Motor motor2 = Motor(AIN1, AIN2, PWMA, offsetA, STBY,5000 ,8,1 );
 Motor motor1 = Motor(BIN1, BIN2, PWMB, offsetB, STBY,5000 ,8,2 );
- 
+
 using namespace websockets;
 WebsocketsServer server;
 AsyncWebServer webserver(80);
@@ -113,7 +113,7 @@ void setup()
   server.listen(82);
   Serial.print("Is server live? ");
   Serial.println(server.available());
- 
+
 }
 {% endhighlight %}
 
@@ -130,7 +130,7 @@ void handle_message(WebsocketsMessage msg) {
   motor1.drive(LValue);
   motor2.drive(RValue);
 }
- 
+
 void loop()
 {
   auto client = server.accept();
@@ -197,13 +197,13 @@ You can find this code in the project /web_smars.html file.
         //                away from the X-axis (Y=0). A greater value will assign
         //                more of the joystick's range to pivot actions.
         //                Allowable range: (0..+127)
-
+    
         // TEMP VARIABLES
         var nMotPremixL;    // Motor (left)  premixed output        (-128..+127)
         var nMotPremixR;    // Motor (right) premixed output        (-128..+127)
         var nPivSpeed;      // Pivot Speed                          (-128..+127)
         var fPivScale;       // Balance scale b/w drive and pivot    (   0..1   )
-
+    
         // Calculate Drive Turn output due to Joystick X input
         if (nJoyY >= 0) {
             // Forward
@@ -214,17 +214,17 @@ You can find this code in the project /web_smars.html file.
             nMotPremixL = (nJoyX >= 0 ? 100.0 - nJoyX : 100.0);
             nMotPremixR = (nJoyX >= 0 ? 100.0 : 100.0 + parseFloat(nJoyX));
         }
-
+    
         // Scale Drive output due to Joystick Y input (throttle)
         nMotPremixL = nMotPremixL * nJoyY / 100.0;
         nMotPremixR = nMotPremixR * nJoyY / 100.0;
-
+    
         // Now calculate pivot amount
         // - Strength of pivot (nPivSpeed) based on Joystick X input
         // - Blending of pivot vs drive (fPivScale) based on Joystick Y input
         nPivSpeed = nJoyX;
         fPivScale = (Math.abs(nJoyY) > fPivYLimit) ? 0.0 : (1.0 - Math.abs(nJoyY) / fPivYLimit);
-
+    
         // Calculate final mix of Drive and Pivot
         nMotMixL = (1.0 - fPivScale) * nMotPremixL + fPivScale * (nPivSpeed);
         nMotMixR = (1.0 - fPivScale) * nMotPremixR + fPivScale * (-nPivSpeed);
@@ -232,7 +232,7 @@ You can find this code in the project /web_smars.html file.
 
         return Math.round(nMotMixL * 2.55) + "," + Math.round(nMotMixR * 2.55);   // The function returns the product of p1 and p2
     }
-
+    
     // we set to 30 ms the send time
     setInterval(function () { send(getfuerza(joy.GetX(), joy.GetY())); }, 300);
 
@@ -250,7 +250,7 @@ Also we need the following code on the same file to send continuosly the message
         const view = document.getElementById('stream');
         const WS_URL = "ws://" + window.location.host + ":82";
         const ws = new WebSocket(WS_URL);
-
+    
         ws.onmessage = message => {
             if (message.data instanceof Blob) {
                 var urlObject = URL.createObjectURL(message.data);
@@ -284,7 +284,7 @@ Also we need the following code on the same file to send continuosly the message
                 }, ms);
             }
         }
-
+    
     </script>
 
 {% endhighlight %}
@@ -300,7 +300,7 @@ Then you will need to copy all of the output data, withouth the first "," inside
 
 ## Conclusion
 
-If you followed this tutorial, you should be able to control a esp32 robot based tank using a webserver and a jostick, if you find any problems following the guide or you think anything needs any change feel free to add any comments.
+If you followed this tutorial, you should be able to control a esp32 robot tb661nfng based vehicule using a webserver and a joystick, if you find any problems following the guide or you think anything needs any change feel free to add any comments.
 
 You can see some short videos of the SMARS tank using this code. As you can see its pretty easy to control and responsive.
 
