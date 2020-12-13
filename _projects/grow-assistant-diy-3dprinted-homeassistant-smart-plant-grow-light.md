@@ -1,10 +1,10 @@
 ---
 layout: project
-title:  Grow Assistant
+title:  Grow Assistant, homeassistant 3dprinted diy plant grow light
 subtitle: A homeassistant integrated smart grow light
 image:  /images/06.jpg
 tags:   led grow light 3dprint nodered esphome homeassistant
-description: A Hass.io (homeassistant) enabled 3d printed grow light. Based on esp32 cam with a custom made PCB.
+description: A Hass.io (homeassistant) enabled 3d printed diy grow light. Based on esp32 cam with a custom made PCB.
 hackaday: https://hackaday.io/project/171004-esp32-cam-smart-led-herbs-planter
 thingiverse: https://www.thingiverse.com/thing:4574145
 github: https://github.com/nkmakes/growassistant/
@@ -157,3 +157,8 @@ The following sketch contains the directives for ESPHome:
 I used a nodered core server on the raspberry pi to control the the esp32cam, with esphome is pretty forward, in my case i am using the Sun component to turn on lights at sunrise and turn them down at dawn, but any time of automation is posssible.
 
 ![grass nodered sketch]({{ site.baseurl }}/images/node_Red.JPG)
+
+## Timelapse Recording and conclusion
+
+I've covered How to create an timelapse from the esp32 cam directly from homeassistant in the following article:
+[Homeassistant esp32cam timelapse easy guide](https://nkmakes.github.io/2020/09/01/Homeassistant-hassio-timelapses-easy-guide/)

@@ -11,7 +11,9 @@ I've been pretty fascinated about trading and crypto from years ago, money just 
 
 As i´m not the only one that thinks about this stuff, there are already some very interesting open source projects that aim to automatize crypto trading.
 
-***WARNING: This document has no intention of persuade nobody to invest money in anything. It's just a informative about how running a program already available. I am not responsible in any way for any money you invest, only your hability creating algorithms is. ****
+UPDATE DIC 2020: There is now a [new post comparing all of the open source crypto trading bots available](https://nkmakes.github.io/2020/10/18/crypto-trading-bot-open-source-comparison/)
+
+*** WARNING: This document has no intention of persuade nobody to invest money in anything. It's just a informative about how running a program already available. I am not responsible in any way for any money you invest, only your ability creating algorithms is. ***
 
 ## About open source crypto trading bots
 
