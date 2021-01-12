@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Crypto bots part 0: What is a crypto bot and comparison of open source projects"
+title:  "Crypto bots part 0: Best open source crypto trading bots of 2021 comparison table"
 date:   2020-10-18 8:05:55 +0100
 image:  /images/freqtrade_main.JPG
 tags:   Freqtrader crypto bitcoin trading bot
-description: Introduction to state-of-art of automated crypto trading tools, also known as crypto bots as of Fall 2020. Overview of major crypto projects and comparison table.
+description: Overview of best crypto bots of 2021. Open source crypto trading tools comparison table.
 ---
 
-Introduction to state-of-art of automated crypto trading tools, also known as crypto bots as of Fall 2020. Overview of major crypto projects and comparison table.
+Introduction to state-of-art of automated crypto trading tools, also known as crypto bots as of Winter 2020. Overview of major crypto projects and comparison table.
 
 *** WARNING: This document has no intention of persuade nobody to invest money in anything. It's just a informative about how running a program already available. I am not responsible in any way for any money you invest, only your ability creating algorithms is. ***
 
