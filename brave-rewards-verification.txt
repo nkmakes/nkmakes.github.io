@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: nkmakes.github.io
+Token: 456920c3295b6a48a9f6c3d7c5ebeda766b9b09c74753bd2ed61c697631d5f4d
